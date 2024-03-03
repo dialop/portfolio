@@ -1,25 +1,16 @@
 
 import React from 'react';
-import { FiGithub, FiTwitter, FiLinkedin, FiGlobe } from 'react-icons/fi';
+import { FiGithub, FiLinkedin } from 'react-icons/fi';
 
 const socialLinks = [
+ 
   {
     id: 1,
-    icon: <FiGlobe />,
-    url: 'https://www.stoman.me/',
-  },
-  {
-    id: 2,
     icon: <FiGithub />,
     url: 'https://github.com/',
   },
   {
-    id: 3,
-    icon: <FiTwitter />,
-    url: 'https://twitter.com/',
-  },
-  {
-    id: 4,
+    id: 2,
     icon: <FiLinkedin />,
     url: 'https://www.linkedin.com/in/',
   },

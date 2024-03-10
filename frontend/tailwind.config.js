@@ -7,7 +7,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        customGrey: '#333333', // Replace '#333333' with your desired hex code
       },
     },
   },

@@ -1,14 +1,15 @@
 
 const MainContent = () => {
     return (
-      <div className="text-center mt-20 mb-10">
-        <h1 className="text-5xl font-bold text-black">Hi, I'm Sarah</h1>
-        <p className="text-3xl font-light mt-4">
-          I create meaningful digital experiences for
-          <span className="text-transparent line-through decoration-black">users</span>
-          <span className="text-blue-600">people</span>
+      <div className="text-center py-12 mt-20 mb-10">
+        <h1 className="text-5xl font-bold text-white">Hi, I'm Diana</h1>
+          <div>
+        <p className="text-3xl  text-white font-light mt-4">
+          I am a Full Stack Developer
         </p>
       </div>
+      </div>
     );
+  
   };
 export default MainContent;

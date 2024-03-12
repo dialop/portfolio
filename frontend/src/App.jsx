@@ -1,17 +1,22 @@
-import React from "react";
+import React from 'react';
 import './styles/App.css';
-
-import Header from "./components/Header";
-import MainContent from "./components/MainContent";
-import Footer from "./components/Footer";
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+import BoxGrid from './components/BoxGrid';
+import ProjectBox from './components/ProjectBox';
 
 function App() {
-    return (
-        <div className="flex flex-col h-screen justify-between" style={{ backgroundColor: '#333333' }}>
-          <Header />
-          <MainContent/>
-          <Footer />
+  return (
+    <div className="flex flex-col min-h-screen bg-gray-100">
+      <NavBar />
+      <main className="flex-grow">
+        <div className="container mx-auto px-4 py-16">
+          <BoxGrid />
         </div>
-      );
-    }
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
 export default App;

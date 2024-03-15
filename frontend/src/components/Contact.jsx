@@ -28,9 +28,9 @@ const Contact = () => {
         <div className="bg-white text-black py-10 px-4">
           <div className="container mx-auto max-w-2xl">
             <div className="text-center mb-10">
-              <h1 className="text-4xl font-bold mb-3">Contact Me</h1>
+              <h1 className="text-3xl font-bold text-center mb-3">Contact</h1>
               <p className="mb-3">Get in touch</p>
-              <p>Email: diana.lophernandez@gmail.com </p>
+              <p>Email: diana.lophernandez@gmail.com</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra.</p>
             </div>
             <form onSubmit={handleSubmit} className="space-y-6">

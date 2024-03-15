@@ -20,10 +20,8 @@ const BoxGrid = () => {
 
   return (
     <div className="bg-gray-100" style={{ paddingTop: '30rem', paddingBottom: '6rem' }}>
-      {/* Increased pt padding to make more space from the navbar */}
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
-          {/* Adjusted gap-x and gap-y for spacing between items */}
           {projectData.map((project, index) => (
             <ProjectBox 
               key={index} 

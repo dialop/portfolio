@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import BoxGrid from './components/BoxGrid';
 import ProjectBox from './components/ProjectBox';
 import CentralMessage from './components/CentralMessage';
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <BoxGrid />
         </div>
       </main>
+      <Contact />
       <Footer />
     </div>
   );

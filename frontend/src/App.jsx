@@ -1,12 +1,11 @@
 import React from 'react';
 import './styles/App.css';
 import NavBar from './components/NavBar';
-import Footer from './components/Footer';
-import BoxGrid from './components/BoxGrid';
-import ProjectBox from './components/ProjectBox';
 import CentralMessage from './components/CentralMessage';
-import Contact from './components/Contact'
 import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact'
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,7 +15,7 @@ function App() {
       <CentralMessage />
         <div className="container mx-auto px-4 py-16">
       <Skills />
-          <BoxGrid />
+      <Projects/>
         </div>
       </main>
       <Contact />

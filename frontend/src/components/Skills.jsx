@@ -11,12 +11,12 @@ import gitLogo from '../assets/images/logos/git.png';
 
 const Skills = () => {
 
-  const parentVariants = {
+  const containerAnimation = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: { opacity: 1, scale: 1 },
   };
 
-  const imageVariants = {
+  const itemAnimation = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
   };
@@ -28,7 +28,7 @@ const Skills = () => {
         src={reactLogo} 
         alt="React" 
         className="h-16-3"
-        variants={imageVariants && parentVariants} 
+        variants={itemAnimation && containerAnimation} 
         initial="hidden"
         animate="visible"
         transition={{ duration: 0.5, delay: 0.1 }}
@@ -40,7 +40,7 @@ const Skills = () => {
         src={tailwindLogo} 
         alt="Tailwind CSS" 
         className="h-16-3"
-        variants={imageVariants && parentVariants}
+        variants={itemAnimation && containerAnimation}
         initial="hidden"
         animate="visible"
         transition={{ duration: 0.5, delay: 0.2 }}
@@ -52,7 +52,7 @@ const Skills = () => {
         src={materialUILogo} 
         alt="React" 
         className="h-16-3"
-        variants={imageVariants && parentVariants} 
+        variants={itemAnimation && containerAnimation} 
         initial="hidden"
         animate="visible"
         transition={{ duration: 0.5, delay: 0.3 }}
@@ -64,7 +64,7 @@ const Skills = () => {
         src={nodejsLogo} 
         alt="Node.js" 
         className="h-16-3"
-        variants={imageVariants && parentVariants}
+        variants={itemAnimation && containerAnimation}
         initial="hidden"
         animate="visible"
         transition={{ duration: 0.5, delay: 0.4 }}
@@ -75,7 +75,7 @@ const Skills = () => {
         src={expressLogo} 
         alt="Express.js" 
         className="h-16-3"
-        variants={imageVariants && parentVariants}
+        variants={itemAnimation && containerAnimation}
         initial="hidden"
         animate="visible"
         transition={{ duration: 0.5, delay: 0.5 }}
@@ -86,7 +86,7 @@ const Skills = () => {
         src={postgresLogo} 
         alt="PostgreSQL" 
         className="h-16-3"
-        variants={imageVariants && parentVariants}
+        variants={itemAnimation && containerAnimation}
         initial="hidden"
         animate="visible"
         transition={{ duration: 0.5, delay: 0.6 }}
@@ -97,7 +97,7 @@ const Skills = () => {
         src={gitLogo} 
         alt="Git" 
         className="h-16-3"
-        variants={imageVariants && parentVariants}
+        variants={itemAnimation && containerAnimation}
         initial="hidden"
         animate="visible"
         transition={{ duration: 0.5, delay: 0.7 }}

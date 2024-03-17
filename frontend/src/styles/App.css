@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(240, 246, 246);
+  }
+  
+  .container {
+    overflow: hidden;
+  }
+  /* Initial state of your image. It's positioned 100px to the left and hidden */
+  .slide-enter {
+    transform: translateX(100%);
+    opacity: -1;
+  }
+  
+  /* State of your image at the end of the enter transition */
+  .slide-enter-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: opacity 3000ms, transform 2000ms;
+  }
+  
+  /* Initial state of your image before it leaves the DOM */
+  .slide-exit {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  /* State of your image at the end of the exit transition */
+  .slide-exit-active {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: opacity 2000ms, transform 2000ms;
+  }

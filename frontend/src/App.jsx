@@ -6,6 +6,7 @@ import BoxGrid from './components/BoxGrid';
 import ProjectBox from './components/ProjectBox';
 import CentralMessage from './components/CentralMessage';
 import Contact from './components/Contact'
+import Skills from './components/Skills';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <main className="flex-grow">
       <CentralMessage />
         <div className="container mx-auto px-4 py-16">
+      <Skills />
           <BoxGrid />
         </div>
       </main>

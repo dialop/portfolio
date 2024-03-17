@@ -1,4 +1,9 @@
 import React from 'react';
+import instastaffImage from '../assets/images/instastaff_homepage.jpeg'
+import photolabsImage from '../assets/images/photolabs_image.jpeg'
+import footwearFusionImage from '../assets/images/footwear_fusion.jpeg'
+import tweeterImage from '../assets/images/tweeter.JPG'
+
 
 function Projects() {
 
@@ -6,7 +11,7 @@ function Projects() {
     {
       title: "Instastaff",
       description: "InstaStaff is an app that facilitates the efficient exchange of labor and work requests by providing the logistic and operational relief to workers and providers in the medical service field.",
-      image: "/images/instastaff_homepage.jpeg",
+      image: instastaffImage,
       tech: ["React", "Tailwind CSS", "Express.js"],
       link: "https://github.com/dialop/instastaff.git",
     },
@@ -14,7 +19,7 @@ function Projects() {
     {
       title: "Photolabs",
       description: "PhotoLabs is a client side React-based single-page (SPA) application that allows users to view photos in a react view-layer library.",
-      image: "/images/photolabs_image.jpeg",
+      image: photolabsImage,
       tech: ["React", "SCSS", "Express.js", "Postgresql"],
       link: "https://github.com/dialop/photolabs-starter.git",
     },
@@ -23,7 +28,7 @@ function Projects() {
   {
       title: "Footwear Fusion",
       description: "Footwear Fusion is a marketplace for shoe enthusiasts, operating as a simplified Kijiji clone where users can buy and sell various types of footwear.",
-      image: "/images/photolabs_image.jpeg",
+      image: footwearFusionImage,
       tech: ["EJS", "SCSS", "Express.js"],
       link: "https://github.com/dialop/tweeter",
     },
@@ -31,7 +36,7 @@ function Projects() {
     {
       title: "Tweeter",
       description: "Tweeter is a simple, single-page Twitter clone.",
-      image: "/images/photolabs_image.jpeg",
+      image: tweeterImage,
       tech: ["JavaScript","HTML", "SCSS", "Express.js"],
       link: "https://github.com/dialop/tweeter.git",
     },

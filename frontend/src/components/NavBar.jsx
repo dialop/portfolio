@@ -12,13 +12,13 @@ const NavBar = () => {
       
       <ul className="flex space-x-4">
         <li>
-          <a href="/work" className="text-black hover:underline">About</a>
+          <a href="/about" className="text-black hover:underline">About</a>
         </li>
         <li>
-          <a href="/about" className="text-black hover:underline">Projects</a>
+          <a href="/projects" className="text-black hover:underline">Projects</a>
         </li>
         <li>
-          <a href="/about" className="text-black hover:underline">Contact</a>
+          <a href="/contact" className="text-black hover:underline">Contact</a>
         </li>
       </ul>
     </nav>

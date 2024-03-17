@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 
 import reactLogo from '../assets/images/logos/react.png';
 import tailwindLogo from '../assets/images/logos/tailwind-css.png';
+import materialUILogo from '../assets/images/logos/material-ui.png';
 import nodejsLogo from '../assets/images/logos/node-js.png';
 import expressLogo from '../assets/images/logos/express-js.png';
 import postgresLogo from '../assets/images/logos/postgresql.png';
@@ -46,6 +47,19 @@ const Skills = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       />
+
+      <motion.img 
+        src={materialUILogo} 
+        alt="React" 
+        className="h-16-3"
+        variants={imageVariants && parentVariants} 
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 0.5, delay: 0.3 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        
+      />  
       <motion.img 
         src={nodejsLogo} 
         alt="Node.js" 
@@ -53,7 +67,7 @@ const Skills = () => {
         variants={imageVariants && parentVariants}
         initial="hidden"
         animate="visible"
-        transition={{ duration: 0.5, delay: 0.3 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       />
@@ -64,7 +78,7 @@ const Skills = () => {
         variants={imageVariants && parentVariants}
         initial="hidden"
         animate="visible"
-        transition={{ duration: 0.5, delay: 0.4 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       />
@@ -75,7 +89,7 @@ const Skills = () => {
         variants={imageVariants && parentVariants}
         initial="hidden"
         animate="visible"
-        transition={{ duration: 0.5, delay: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.6 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       />
@@ -86,7 +100,7 @@ const Skills = () => {
         variants={imageVariants && parentVariants}
         initial="hidden"
         animate="visible"
-        transition={{ duration: 0.5, delay: 0.6 }}
+        transition={{ duration: 0.5, delay: 0.7 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       />

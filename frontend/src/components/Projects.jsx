@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProjectBox = ({ title, content, src, altText }) => {
+const Projects = ({ title, content, src, altText }) => {
   return (
     <div className="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden mb-10 mt-16"> 
       <img className="w-full h-48 object-cover" src={src} alt={altText} style={{ paddingTop: '15rem', paddingBottom: '1rem'}}/>
@@ -12,4 +12,4 @@ const ProjectBox = ({ title, content, src, altText }) => {
   );
 };
 
-export default ProjectBox;
+export default Projects;

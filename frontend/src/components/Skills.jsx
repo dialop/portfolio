@@ -20,10 +20,6 @@ const Skills = () => {
     visible: { opacity: 1, y: 0 },
   };
 
-  const handleClick = () => {
-    console.log('Image clicked');
-  };
-
 
   return (
     <div className="flex justify-center items-center space-x-4 py-3">
@@ -37,6 +33,7 @@ const Skills = () => {
         transition={{ duration: 0.5, delay: 0.1 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
+        
       />
       <motion.img 
         src={tailwindLogo} 

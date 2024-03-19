@@ -15,10 +15,8 @@ function App() {
 
         <section id="about" className="pt-24">
           <CentralMessage />
-        </section>
-        <section id="skills" className="py-16"> 
+        </section> 
           <Skills />
-        </section>
         <section id="projects" className="py-16"> 
           <Projects />
         </section>

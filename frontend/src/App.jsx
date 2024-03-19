@@ -4,7 +4,7 @@ import NavBar from './components/NavBar';
 import CentralMessage from './components/CentralMessage';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-import Contact from './components/Contact'
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
@@ -12,13 +12,19 @@ function App() {
     <div className="flex flex-col min-h-screen bg-gray-100">
       <NavBar />
       <main className="flex-grow">
-      <CentralMessage />
-        <div className="container mx-auto px-4 py-16">
-      <Skills />
-      <Projects/>
-        </div>
+
+        <section id="about" className="pt-24">
+          <CentralMessage />
+        </section>
+        <section id="skills" className="py-16"> 
+          <Skills />
+        </section>
+        <section id="projects" className="py-16"> 
+          <Projects />
+        </section>
+        <section id="contact" className="py-16"> 
+        </section>
       </main>
-      <Contact />
       <Footer />
     </div>
   );

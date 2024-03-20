@@ -1,7 +1,6 @@
 import React from 'react';
 import './styles/App.css';
 import NavBar from './components/navigation/NavBar';
-import ChipTabs from './components/navigation/ChipTabs';
 import CentralMessage from './components/CentralMessage';
 import Skills from './components/Skills';
 import Projects from './components/Projects';

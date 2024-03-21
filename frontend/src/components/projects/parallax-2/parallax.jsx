@@ -26,8 +26,8 @@ export const Parallax = () => {
   return (
     <>
       <section className="text-white bg-blue-500 h-screen flex items-center justify-center flex-col">
-        <h2 className="text-4xl font-bold">Hi, I'm Peter</h2>
-        <h3 className="text-2xl mt-4">Frontend Developer</h3>
+        <h2 className="text-4xl font-bold">Hi, I'm Diana</h2>
+        <h3 className="text-2xl mt-4">Full Stack Web Developer</h3>
       </section>
       <div ref={containerRef} className="flex overflow-hidden">
         {["HTML", "CSS", "ES6", "React JS"].map((tech, index) => (
@@ -35,11 +35,11 @@ export const Parallax = () => {
             key={index}
             className={`flex-1 min-w-full flex items-center justify-center ${index % 2 === 0 ? "bg-blue-400" : "bg-red-400"} p-10 text-white`}
           >
-            <div>
+            {/* <div>
               <h2 className="text-3xl font-bold">{tech}</h2>
               <p className="mt-4">
               </p>
-            </div>
+            </div> */}
           </section>
         ))}
       </div>

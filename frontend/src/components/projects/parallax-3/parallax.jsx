@@ -1,46 +1,51 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import instastaffImage from '../../assets/images/instastaff_homepage.jpeg';
+import instastaffImage from '../../../assets/images/instastaff_homepage.jpeg';
+import footwearFusionImage from '../../../assets/images/footwear_fusion.jpeg';
+import tweeterImage from '../../../assets/images/tweeter.JPG';
 
+
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const Parallax = () => {
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.utils.toArray(".parallax-section").forEach((section) => {
-      const bg = section.querySelector(".bg");
-
-      ScrollTrigger.create({
-        trigger: section,
-        start: "top bottom",
-        end: "bottom top",
-        scrub: true,
-        onEnter: () => gsap.to(bg, { backgroundPosition: "50% 0%", ease: "none" }),
-        onLeaveBack: () => gsap.to(bg, { backgroundPosition: `50% 100%`, ease: "none" }),
-        onUpdate: (self) => {
-          const progress = self.progress.toFixed(3); // 3 decimal places
-          const yPos = 100 * progress;
-          gsap.set(bg, { backgroundPosition: `50% ${yPos}%` });
+    gsap.utils.toArray(".parallax-section").forEach((section, index) => {
+      
+      gsap.fromTo(
+        section.querySelector(".bg"),
+        {
+          backgroundPosition: "50% 0%",
+        },
+        {
+          backgroundPosition: `50% ${index % 2 === 0 ? "-" : ""}100%`, 
+          ease: "none",
+          scrollTrigger: {
+            trigger: section,
+            start: "top bottom",
+            end: "bottom top",
+            scrub: true,
+          },
         }
-      });
+      );
     });
   }, []);
 
   return (
     <>
-      <section className="relative h-screen flex justify-center items-center overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover filter brightness-75" style={{ backgroundImage: `url(${instastaffImage})`, backgroundPosition: 'center' }}></div>
-        <h1 className="z-10 text-white text-4xl font-bold shadow-md">Parallax</h1>
-      </section>
-      <section className="relative h-screen flex justify-center items-center overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover filter brightness-75" style={{ backgroundImage: `url(${instastaffImage})`, backgroundPosition: 'center' }}></div>
-        <h1 className="z-10 text-white text-4xl font-bold shadow-md">So smooth</h1>
-      </section>
-      <section className="relative h-screen flex justify-center items-center overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover filter brightness-75" style={{ backgroundImage: `url(${instastaffImage})`, backgroundPosition: 'center' }}></div>
-        <h1 className="z-10 text-white text-4xl font-bold shadow-md">Nice, right?</h1>
-      </section>
+      <div className="parallax-section h-screen flex justify-center items-center relative" style={{ backgroundImage: `url(${instastaffImage})` }}>
+        <h2 className="z-10 text-white text-4xl font-bold">Infinite</h2>
+        <div className="bg absolute inset-0" style={{ backgroundImage: `url(${instastaffImage})` }}></div>
+      </div>
+      <div className="parallax-section h-screen flex justify-center items-center relative" style={{ backgroundImage: `url(${footwearFusionImage})` }}>
+        <h2 className="z-10 text-white text-4xl font-bold">Scrolling</h2>
+        <div className="bg absolute inset-0" style={{ backgroundImage: `url(${footwearFusionImage})` }}></div>
+      </div>
+      <div className="parallax-section h-screen flex justify-center items-center relative" style={{ backgroundImage: `url(${tweeterImage})` }}>
+        <h2 className="z-10 text-white text-4xl font-bold">Website</h2>
+        <div className="bg absolute inset-0" style={{ backgroundImage: `url(${tweeterImage})` }}></div>
+      </div>
     </>
   );
 };

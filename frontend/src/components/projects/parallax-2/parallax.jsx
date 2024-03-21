@@ -38,7 +38,6 @@ export const Parallax = () => {
             <div>
               <h2 className="text-3xl font-bold">{tech}</h2>
               <p className="mt-4">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi labore eius cum perferendis consectetur culpa laboriosam quam, sed ea nihil, suscipit, quidem est expedita.
               </p>
             </div>
           </section>

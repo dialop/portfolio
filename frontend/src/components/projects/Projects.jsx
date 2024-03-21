@@ -1,9 +1,8 @@
 import React from 'react';
-import instastaffImage from '../assets/images/instastaff_homepage.jpeg'
-import photolabsImage from '../assets/images/photolabs_image.jpeg'
-import footwearFusionImage from '../assets/images/footwear_fusion.jpeg'
-import tweeterImage from '../assets/images/tweeter.JPG'
-
+import instastaffImage from '../../assets/images/instastaff_homepage.jpeg';
+import photolabsImage from '../../assets/images/photolabs_image.jpeg';
+import footwearFusionImage from '../../assets/images/footwear_fusion.jpeg';
+import tweeterImage from '../../assets/images/tweeter.JPG';
 
 function Projects() {
 

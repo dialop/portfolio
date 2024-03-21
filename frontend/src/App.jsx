@@ -3,7 +3,10 @@ import './styles/App.css';
 import NavBar from './components/navigation/NavBar';
 import CentralMessage from './components/CentralMessage';
 import Skills from './components/Skills';
-import Projects from './components/Projects';
+import Projects from './components/projects/Projects';
+import { Parallax as ParallaxOne } from './components/projects/parallax-1/parallax';
+import { Parallax as ParallaxTwo } from './components/projects/parallax-2/parallax';
+import { Parallax as ParallaxThree } from './components/projects/parallax-3/parallax';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -15,14 +18,23 @@ function App() {
         <section id="about" className="pt-24">
           <CentralMessage />
         </section> 
-          <Skills />
+        <Skills />
         <section id="projects" className="py-16"> 
           <Projects />
         </section>
+        <section id="parallaxOne" className="py-16">
+          <ParallaxOne />
+        </section>
+        <section id="parallaxTwo" className="py-16">
+          <ParallaxTwo />
+        </section>
+        <section id="parallaxThree" className="py-16">
+          <ParallaxThree />
+        </section>
         <section id="contact" className="py-16"> 
+          <Contact />
         </section>
       </main>
-      <Contact/>
       <Footer />
     </div>
   );

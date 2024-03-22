@@ -34,18 +34,19 @@ export const Parallax = () => {
 
   return (
     <>
-      <div className="parallax-section h-screen flex justify-center items-center relative" style={{ backgroundImage: `url(${instastaffImage})` }}>
-        <h2 className="z-10 text-white text-4xl font-bold">Infinite</h2>
-        <div className="bg absolute inset-0" style={{ backgroundImage: `url(${instastaffImage})` }}></div>
+      <div className="parallax-section h-screen flex justify-center items-center relative" style={{ backgroundImage: `url(${instastaffImage})`, backgroundSize: 'cover' }}>
+        <h2 className="z-10 text-white text-4xl font-bold"></h2>
+        <div className="bg absolute inset-0" style={{ backgroundImage: `url(${instastaffImage})`, backgroundSize: 'cover' }}></div>
       </div>
-      <div className="parallax-section h-screen flex justify-center items-center relative" style={{ backgroundImage: `url(${footwearFusionImage})` }}>
-        <h2 className="z-10 text-white text-4xl font-bold">Scrolling</h2>
-        <div className="bg absolute inset-0" style={{ backgroundImage: `url(${footwearFusionImage})` }}></div>
+      <div className="parallax-section h-screen flex justify-center items-center relative" style={{ backgroundImage: `url(${footwearFusionImage})`, backgroundSize: 'cover' }}>
+        <h2 className="z-10 text-white text-4xl font-bold"></h2>
+        <div className="bg absolute inset-0" style={{ backgroundImage: `url(${footwearFusionImage})`, backgroundSize: 'cover' }}></div>
       </div>
-      <div className="parallax-section h-screen flex justify-center items-center relative" style={{ backgroundImage: `url(${photolabsImage})` }}>
-        <h2 className="z-10 text-white text-4xl font-bold">Website</h2>
-        <div className="bg absolute inset-0" style={{ backgroundImage: `url(${photolabsImage})` }}></div>
+      <div className="parallax-section h-screen flex justify-center items-center relative" style={{ backgroundImage: `url(${photolabsImage})`, backgroundSize: 'cover' }}>
+        <h2 className="z-10 text-white text-4xl font-bold"></h2>
+        <div className="bg absolute inset-0" style={{ backgroundImage: `url(${photolabsImage})`, backgroundSize: 'cover' }}></div>
       </div>
     </>
   );
+  
 };

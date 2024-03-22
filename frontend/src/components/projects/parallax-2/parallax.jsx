@@ -43,7 +43,7 @@ export const Parallax = () => {
           </section>
         ))}
       </div>
-      <section className="bg-gray-900 text-white p-10 text-center">
+      {/* <section className="bg-gray-900 text-white p-10 text-center">
         <h2 className="text-3xl font-bold mb-6">Contact</h2>
         <form className="max-w-xl mx-auto space-y-4">
           <input
@@ -63,7 +63,7 @@ export const Parallax = () => {
             SUBMIT
           </button>
         </form>
-      </section>
+      </section> */}
     </>
   );
 };

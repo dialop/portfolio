@@ -28,7 +28,6 @@ export const Parallax = () => {
     </section>
     <section className="py-14 px-10 bg-white">
       <h2 className="text-3xl font-bold mb-5"></h2>
-      {/* Repeat your content paragraphs here, applying Tailwind classes as needed */}
     </section>
   </>
 );

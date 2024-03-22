@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import instastaffImage from '../../../assets/images/instastaff_homepage.jpeg';
+import instastaffImage from '../../../assets/images/instastaff.png';
 import footwearFusionImage from '../../../assets/images/footwear_fusion.jpeg';
-import tweeterImage from '../../../assets/images/tweeter.JPG';
+import photolabsImage from '../../../assets/images/photolabs_image.jpeg';
 
 
 
@@ -42,9 +42,9 @@ export const Parallax = () => {
         <h2 className="z-10 text-white text-4xl font-bold">Scrolling</h2>
         <div className="bg absolute inset-0" style={{ backgroundImage: `url(${footwearFusionImage})` }}></div>
       </div>
-      <div className="parallax-section h-screen flex justify-center items-center relative" style={{ backgroundImage: `url(${tweeterImage})` }}>
+      <div className="parallax-section h-screen flex justify-center items-center relative" style={{ backgroundImage: `url(${photolabsImage})` }}>
         <h2 className="z-10 text-white text-4xl font-bold">Website</h2>
-        <div className="bg absolute inset-0" style={{ backgroundImage: `url(${tweeterImage})` }}></div>
+        <div className="bg absolute inset-0" style={{ backgroundImage: `url(${photolabsImage})` }}></div>
       </div>
     </>
   );

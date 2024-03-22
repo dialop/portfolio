@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import instastaffImage from '../../../assets/images/instastaff.png';
 import footwearFusionImage from '../../../assets/images/footwear_fusion.jpeg';
-import photolabsImage from '../../../assets/images/photolabs_image.jpeg';
+import photolabsImage from '../../../assets/images/photolabs_modal.png';
 
 
 

@@ -34,19 +34,21 @@ export const Parallax = () => {
 
   return (
     <>
-      <div className="parallax-section h-screen flex justify-center items-center relative" style={{ backgroundImage: `url(${instastaffImage})`, backgroundSize: 'cover' }}>
+      <div className="container mx-auto">
+         <h2 className="text-3xl font-bold mb-10 text-center">Projects</h2>    
+      <div className="parallax-section h-screen flex justify-center items-center relative" style={{ backgroundImage: `url(${instastaffImage})` }}>
         <h2 className="z-10 text-white text-4xl font-bold"></h2>
-        <div className="bg absolute inset-0" style={{ backgroundImage: `url(${instastaffImage})`, backgroundSize: 'cover' }}></div>
+        <div className="bg absolute inset-0" style={{ backgroundImage: `url(${instastaffImage})` }}></div>
       </div>
-      <div className="parallax-section h-screen flex justify-center items-center relative" style={{ backgroundImage: `url(${footwearFusionImage})`, backgroundSize: 'cover' }}>
+      <div className="parallax-section h-screen flex justify-center items-center relative" style={{ backgroundImage: `url(${footwearFusionImage})` }}>
         <h2 className="z-10 text-white text-4xl font-bold"></h2>
-        <div className="bg absolute inset-0" style={{ backgroundImage: `url(${footwearFusionImage})`, backgroundSize: 'cover' }}></div>
+        <div className="bg absolute inset-0" style={{ backgroundImage: `url(${footwearFusionImage})` }}></div>
       </div>
-      <div className="parallax-section h-screen flex justify-center items-center relative" style={{ backgroundImage: `url(${photolabsImage})`, backgroundSize: 'cover' }}>
+      <div className="parallax-section h-screen flex justify-center items-center relative" style={{ backgroundImage: `url(${photolabsImage})` }}>
         <h2 className="z-10 text-white text-4xl font-bold"></h2>
-        <div className="bg absolute inset-0" style={{ backgroundImage: `url(${photolabsImage})`, backgroundSize: 'cover' }}></div>
+        <div className="bg absolute inset-0" style={{ backgroundImage: `url(${photolabsImage})` }}></div>
+      </div>
       </div>
     </>
   );
-  
 };

@@ -5,7 +5,7 @@ import CentralMessage from './components/CentralMessage';
 import Skills from './components/Skills';
 // import Projects from './components/projects/Projects';
 // import { Parallax as ParallaxOne } from './components/projects/parallax-1/parallax';
-import { Parallax as ParallaxThree } from './components/projects/parallax-3/parallax';
+import {Parallax } from './components/projects/parallax/parallax';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -25,8 +25,8 @@ function App() {
           {/* <ParallaxOne /> */}
         </section>
 
-        <section id="parallaxThree" className="py-16">
-          <ParallaxThree />
+        <section id="parallax" className="py-16">
+          <Parallax />
         </section>
         <section id="contact" className="py-16"> 
           <Contact />

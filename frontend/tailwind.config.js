@@ -1,5 +1,6 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
+  darkMode: 'class', // Enable dark mode
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
@@ -21,7 +22,6 @@ module.exports = {
       center: true,
       padding: '2rem',
     },
-
   },
-  plugins: [], 
-}
+  plugins: [],
+};

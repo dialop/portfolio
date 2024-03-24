@@ -3,6 +3,10 @@ body {
   background-color: rgb(240, 246, 246);
 }
 
+.dark {
+  background-color: #1a202c;
+  color: #cbd5e0;
+}
 /* Styles to reset and contain content */
 .container {
   overflow: hidden;

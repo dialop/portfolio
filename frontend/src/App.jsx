@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/App.css';
 import NavBar from './components/navigation/NavBar';
-import CentralMessage from './components/CentralMessage';
+import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/projects/Projects';
 import Contact from './components/Contact';
@@ -13,7 +13,7 @@ function App() {
       <NavBar />
       <main className="flex-grow">
         <section id="about" className="pt-24">
-          <CentralMessage />
+          <About />
         </section> 
         <Skills />
         <section id="projects" className="py-16"> 

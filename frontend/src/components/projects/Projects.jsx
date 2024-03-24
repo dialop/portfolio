@@ -9,7 +9,7 @@ function Projects() {
       title: "Instastaff",
       description: "InstaStaff is an app that facilitates the efficient exchange of labor and work requests by providing the logistic and operational relief to workers and providers in the medical service field.",
       image: instastaffImage,
-      tech: ["React", "Tailwind CSS", "Express.js"],
+      tech: ["React", "Tailwind CSS", "Material UI", "Express.js", "Node.js", "Postgresql"],
       link: "https://github.com/dialop/instastaff.git",
     },
 
@@ -44,7 +44,7 @@ function Projects() {
   return (
     <div className="bg-gray-100 py-10 px-5">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-10 text-center">Projects</h2>
+        <h2 className="text-5xl font-bold mb-10 text-center">Projects</h2>
         <div className="grid grid-cols-1 gap-14">
           {projectData.map((project, index) => (
             <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105">

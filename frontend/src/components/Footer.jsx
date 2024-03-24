@@ -22,9 +22,6 @@ function Footer() {
       <div className="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark">
         {/* Footer social links */}
         <div className="font-general-regular flex flex-col justify-center items-center mb-12 sm:mb-28">
-          <p className="text-3xl sm:text-4xl text-primary-dark dark:text-primary-light mb-5 text-white">
-            Let's Connect!
-          </p>
           <ul className="flex gap-4 sm:gap-8">
             {socialLinks.map((link) => (
               <a

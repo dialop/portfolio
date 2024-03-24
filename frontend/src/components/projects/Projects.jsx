@@ -38,8 +38,6 @@ function Projects() {
     //   link: "https://github.com/dialop/tweeter.git",
     // },
 
-
-
   ];
 
   
@@ -49,8 +47,8 @@ function Projects() {
         <h2 className="text-3xl font-bold mb-10 text-center">Projects</h2>
         <div className="grid grid-cols-1 gap-14">
           {projectData.map((project, index) => (
-            <div key={index} className="bg-white shadow-lg rounded-2xl overflow-hidden transform transition duration-500 hover:scale-105">
-              <img src={project.image} alt={project.title} className="w-full h-[70vh] object-cover rounded-t-2xl" />
+            <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105">
+              <img src={project.image} alt={project.title} className="w-full h-[70vh] object-cover" />
               <div className="p-8">
                 <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
                 <p className="text-gray-700 mb-5">{project.description}</p>

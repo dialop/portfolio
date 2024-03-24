@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import instastaffImage from '../../../assets/images/instastaff.png';
-import footwearFusionImage from '../../../assets/images/footwear_fusion.jpeg';
-import photolabsImage from '../../../assets/images/photolabs_modal.png';
+import photolabsImage from '../../../assets/images/photolabs.png';
+import portfolioImage from '../../../assets/images/portfolio.png';
 
 
 
@@ -40,13 +40,13 @@ export const Parallax = () => {
         <h2 className="z-10 text-white text-4xl font-bold"></h2>
         <div className="bg absolute inset-0" style={{ backgroundImage: `url(${instastaffImage})` }}></div>
       </div>
-      <div className="parallax-section h-screen flex justify-center items-center relative" style={{ backgroundImage: `url(${footwearFusionImage})` }}>
-        <h2 className="z-10 text-white text-4xl font-bold"></h2>
-        <div className="bg absolute inset-0" style={{ backgroundImage: `url(${footwearFusionImage})` }}></div>
-      </div>
       <div className="parallax-section h-screen flex justify-center items-center relative" style={{ backgroundImage: `url(${photolabsImage})` }}>
         <h2 className="z-10 text-white text-4xl font-bold"></h2>
         <div className="bg absolute inset-0" style={{ backgroundImage: `url(${photolabsImage})` }}></div>
+      </div>
+      <div className="parallax-section h-screen flex justify-center items-center relative" style={{ backgroundImage: `url(${photolabsImage})` }}>
+        <h2 className="z-10 text-white text-4xl font-bold"></h2>
+        <div className="bg absolute inset-0" style={{ backgroundImage: `url(${portfolioImage})` }}></div>
       </div>
       </div>
     </>

@@ -5,7 +5,6 @@ import reactLogo from '../assets/images/logos/react.png';
 import tailwindLogo from '../assets/images/logos/tailwind-css.png';
 import materialUILogo from '../assets/images/logos/material-ui.png';
 import nodejsLogo from '../assets/images/logos/node-js.png';
-import expressLogo from '../assets/images/logos/express-js.png';
 import postgresLogo from '../assets/images/logos/postgresql.png';
 import gitLogo from '../assets/images/logos/git.png';
 
@@ -73,17 +72,7 @@ const Skills = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       />
-      <motion.img 
-        src={expressLogo} 
-        alt="Express.js" 
-        className="h-16-3"
-        variants={itemAnimation && containerAnimation}
-        initial="hidden"
-        animate="visible"
-        transition={{ duration: 0.5, delay: 0.5 }}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-      />
+  
       <motion.img 
         src={postgresLogo} 
         alt="PostgreSQL" 
@@ -91,7 +80,7 @@ const Skills = () => {
         variants={itemAnimation && containerAnimation}
         initial="hidden"
         animate="visible"
-        transition={{ duration: 0.5, delay: 0.6 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       />
@@ -102,7 +91,7 @@ const Skills = () => {
         variants={itemAnimation && containerAnimation}
         initial="hidden"
         animate="visible"
-        transition={{ duration: 0.5, delay: 0.7 }}
+        transition={{ duration: 0.5, delay: 0.6 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       />

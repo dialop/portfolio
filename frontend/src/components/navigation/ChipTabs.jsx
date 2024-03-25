@@ -28,7 +28,7 @@ const ChipTabs = () => {
     }, []);
   
     return (
-      <div className="px-4 py-14 bg-gray-100 flex items-center flex-wrap gap-2">
+      <div className="px-4 py-14 transparent flex items-center flex-wrap gap-2">
         {tabs.map((tab) => (
           <Chip
             text={tab.text}

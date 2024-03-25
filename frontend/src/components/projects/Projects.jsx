@@ -42,7 +42,7 @@ function Projects() {
 
   
   return (
-    <div className="bg-gray-100 py-10 px-5">
+    <div className="transparent py-10 px-5">
       <div className="container mx-auto">
         <h2 className="text-5xl font-bold mb-10 text-center">Projects</h2>
         <div className="grid grid-cols-1 gap-14">

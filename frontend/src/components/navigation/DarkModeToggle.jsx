@@ -44,7 +44,7 @@ const DarkModeToggle = ({ darkMode, setDarkMode }) => {
           </span>
           <span
             className={`flex h-9 w-9 items-center justify-center rounded ${
-              darkMode ? 'text-body-color' : 'bg-primary text-white'
+            darkMode ? 'text-body-color' : 'bg-primary text-white'
             }`}
           >
             <svg

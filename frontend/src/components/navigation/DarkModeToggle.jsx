@@ -14,10 +14,10 @@ const DarkModeToggle = ({ darkMode, setDarkMode }) => {
         className='sr-only'
       />
 
-    <div className='shadow-card flex h-[46px] w-[82px] items-center justify-center rounded-md bg-white'>
+    <div className='shadow-card flex h-[40px] w-[56px] items-center justify-center rounded-md bg-white'>
         <span
           className={`flex h-9 w-9 items-center justify-center rounded ${
-            darkMode ? 'bg-primary text-white' : 'text-body-color'
+            darkMode ? 'bg-primary text-black' : 'text-body-color'
           }`}
         >
             <svg

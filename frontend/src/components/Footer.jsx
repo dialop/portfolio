@@ -13,7 +13,7 @@ function Footer() {
             rel="noopener noreferrer"
             className="text-grey dark:text-grey hover:text-indigo-500 dark:hover:text-indigo-400"
           >
-            Designed & Crafted by Diana © 2024
+            Created & Designed by Diana © 2024
           </a>
         </div>
       </div>

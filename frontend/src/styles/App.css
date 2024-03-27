@@ -7,10 +7,6 @@ body {
   background-color: #1a202c;
   color: #cbd5e0;
 }
-/* Styles to reset and contain content */
-.container {
-  overflow: hidden;
-}
 
 /* Animation styles for entering and exiting elements */
 .slide-enter {

@@ -49,7 +49,7 @@ function Projects() {
         <div className="grid grid-cols-1 gap-14">
           {projectData.map((project, index) => (
             <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105">
-              <img src={project.image} alt={project.title} className="w-full h-[70vh] object-cover" />
+              <img src={project.image} alt={project.title} className="w-full h-70vh object-cover" />
               <div className="p-8">
                 <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
                 <p className="text-gray-700 mb-5">{project.description}</p>

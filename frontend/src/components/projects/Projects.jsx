@@ -45,6 +45,7 @@ function Projects() {
     <div className="transparent py-10 px-5">
       <div className="container mx-auto">
         <h2 className="text-5xl font-bold mb-10 text-center">Projects</h2>
+        {/* grid size */}
         <div className="grid grid-cols-1 gap-14">
           {projectData.map((project, index) => (
             <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105">

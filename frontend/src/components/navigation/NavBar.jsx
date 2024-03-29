@@ -42,7 +42,7 @@ const NavBar = ({ darkMode, setDarkMode }) => {
     };
 
     return (
-        <header className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ease-in-out ${showNavBar ? 'translate-y-0' : '-translate-y-full'} ${darkMode ? 'bg-black text-white' : 'bg-white text-black'}`}>
+        <header className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ease-in-out ${showNavBar ? 'translate-y-0' : '-translate-y-full'} ${darkMode ? 'bg-transparent text-white' : 'bg-white text-black'}`}>
             <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 space-x-4">
                 <div>
                     <h1 className="text-3xl font-bold cursor-pointer" onClick={refreshPage}>DIANA LOPEZ</h1>

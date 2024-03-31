@@ -8,14 +8,21 @@ const tabs = [
 ];
 
 const ChipTabs = () => {
-  const [selected, setSelected] = useState(window.location.hash);
+  const [selected, setSelected] = useState('');
+  const [initialLoad, setInitialLoad] = useState(true);
 
   useEffect(() => {
     const handleHashChange = () => {
-      setSelected(window.location.hash);
+      
+      if (!initialLoad) {
+        setSelected(window.location.hash);
+      }
+      setInitialLoad(false); 
     };
 
     window.addEventListener("hashchange", handleHashChange);
+   
+    setInitialLoad(false);
 
     return () => {
       window.removeEventListener("hashchange", handleHashChange);
@@ -37,29 +44,23 @@ const ChipTabs = () => {
 };
 
 const Chip = ({ text, selected, setSelected }) => {
-  // if dark mode is active by checking the document body's class list
+  // Check if dark mode is active by examining the document body's class list
   const isDarkMode = document.body.classList.contains("dark");
 
   return (
     <a
       href={`#${text.toLowerCase()}`}
       onClick={() => setSelected()}
-      className={`${
+      className={`relative flex items-center justify-center px-2.5 py-0.5 text-sm transition-colors ${
         selected ? "border-b-2 border-indigo-600" : "hover:border-b-2 hover:border-indigo-600"
       } ${
-        // apply text color based on dark mode state
+        // Always apply text-black when not in dark mode, else apply text-white
         isDarkMode ? "text-white" : "text-black"
-      } text-sm transition-colors px-2.5 py-0.5 relative flex items-center justify-center`}
-      style={{ paddingBottom: '8px' }} >
+      }`}
+      style={{ paddingBottom: '8px' }} // Keep the underline a bit lower
+    >
       {text}
-      {selected && (
-        <motion.span
-          layoutId="underline"
-          transition={{ type: "spring", duration: 0.5 }}
-        ></motion.span>
-      )}
     </a>
   );
 };
-
 export default ChipTabs;

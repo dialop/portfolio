@@ -13,8 +13,8 @@ function Contact() {
             dianalophernandez@gmail.com
           </a>
         </div>
-        <div className="flex justify-center items-center gap-8 mt-8">
-          {/* GitHub Icon with Tooltip */}
+        <div className="flex justify-center items-center gap-8 mt-12">
+          {/* GitHub Icon */}
           <div className="group relative">
             <a href="https://github.com/" aria-label="GitHub" className="flex justify-center items-center p-4 bg-white rounded-lg shadow-lg transition-all hover:scale-110 hover:bg-gray-800">
               <FaGithub className="w-8 h-8 text-black group-hover:text-white transition-colors duration-300 ease-in-out" />
@@ -24,7 +24,7 @@ function Contact() {
             </a>
           </div>
 
-          {/* LinkedIn Icon with Tooltip */}
+          {/* LinkedIn Icon */}
           <div className="group relative">
             <a href="https://www.linkedin.com/" aria-label="LinkedIn" className="flex justify-center items-center p-4 bg-white rounded-lg shadow-lg transition-all hover:scale-110 hover:bg-blue-700">
               <FaLinkedin className="w-8 h-8 text-black group-hover:text-white transition-colors duration-300 ease-in-out" />

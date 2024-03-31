@@ -36,20 +36,27 @@ const NavBar = ({ darkMode, setDarkMode }) => {
     }, [lastScrollY]);
 
     return (
-        <header style={{ backgroundColor: darkMode ? 'rgba(26, 32, 44, 0.8)' : 'rgba(255, 255, 255, 0.2)' }} 
-                 className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ease-in-out ${showNavBar ? 'translate-y-0' : '-translate-y-full'} ${darkMode ? 'text-white' : 'text-black'}`}>
-            <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 space-x-4">
-                <div>
-                    <h1 className="text-3xl font-bold cursor-pointer" onClick={() => window.location.reload()}>DIANA LOPEZ</h1>
-                    <p className="text-md font-light">Full Stack Developer</p>
-                </div>
-                <div className="flex items-center space-x-4">
-                    <ChipTabs />
-                    <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
-                </div>
+        <header 
+          // background color darkMode state with opacity
+          style={{ backgroundColor: darkMode ? 'rgba(26, 32, 44, 0.8)' : 'rgba(255, 255, 255, 0.2)' }} 
+          // fixed positioning, width, z-index, transition effects and conditional translateY and text color
+          className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ease-in-out 
+                      ${showNavBar ? 'translate-y-0' : '-translate-y-full'} 
+                      ${darkMode ? 'text-white' : 'text-black'}`}>
+          <div 
+            className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 space-x-4">
+            <div>
+              {/* clickable "Diana Lopez" header */}
+              <h1 className="text-3xl font-bold cursor-pointer" onClick={() => window.location.reload()}>DIANA LOPEZ</h1>
+              <p className="text-md font-light">Full Stack Developer</p>
             </div>
+            <div className="flex items-center space-x-4">
+              <ChipTabs />
+              <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+            </div>
+          </div>
         </header>
-    );
-};
+      );
+    };
 
 export default NavBar;

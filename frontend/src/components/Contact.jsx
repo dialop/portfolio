@@ -16,7 +16,7 @@ function Contact() {
         <div className="flex justify-center items-center gap-8 mt-12">
           {/* GitHub Icon */}
           <div className="group relative">
-            <a href="https://github.com/" aria-label="GitHub" className="flex justify-center items-center p-4 bg-white rounded-lg shadow-lg transition-all hover:scale-110 hover:bg-gray-800">
+            <a href="https://github.com/dialop" aria-label="GitHub" className="flex justify-center items-center p-4 bg-white rounded-lg shadow-lg transition-all hover:scale-110 hover:bg-gray-800">
               <FaGithub className="w-8 h-8 text-black group-hover:text-white transition-colors duration-300 ease-in-out" />
               <span className="absolute bottom-full mb-3 w-auto p-2 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out -translate-x-1/2 left-1/2">
                 GitHub
@@ -26,7 +26,7 @@ function Contact() {
 
           {/* LinkedIn Icon */}
           <div className="group relative">
-            <a href="https://www.linkedin.com/" aria-label="LinkedIn" className="flex justify-center items-center p-4 bg-white rounded-lg shadow-lg transition-all hover:scale-110 hover:bg-blue-700">
+            <a href="https://www.linkedin.com/in/diana-lopezh" aria-label="LinkedIn" className="flex justify-center items-center p-4 bg-white rounded-lg shadow-lg transition-all hover:scale-110 hover:bg-blue-700">
               <FaLinkedin className="w-8 h-8 text-black group-hover:text-white transition-colors duration-300 ease-in-out" />
               <span className="absolute bottom-full mb-3 w-auto p-2 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out -translate-x-1/2 left-1/2">
                 LinkedIn

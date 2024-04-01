@@ -13,7 +13,7 @@ function Contact() {
             dianalophernandez@gmail.com
           </a>
         </div>
-        <div className="flex justify-center items-center gap-8 mt-12">
+        <div className="flex justify-center items-center gap-8 mt-20">
           {/* GitHub Icon */}
           <div className="group relative">
             <a href="https://github.com/dialop" aria-label="GitHub" className="flex justify-center items-center p-4 bg-white rounded-lg shadow-lg transition-all hover:scale-110 hover:bg-gray-800">

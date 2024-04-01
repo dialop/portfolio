@@ -7,20 +7,8 @@ const NavBar = ({ darkMode, setDarkMode }) => {
     const [lastScrollY, setLastScrollY] = useState(0);
 
     useEffect(() => {
-        //load dark mode state from local storage
-        const isDarkMode = localStorage.getItem('darkMode') === 'true';
-        setDarkMode(isDarkMode);
-    }, [setDarkMode]);
-
-    useEffect(() => {
-        //save dark mode to local storage 
-        localStorage.setItem('darkMode', darkMode);
-    }, [darkMode]);
-
-    useEffect(() => {
         const controlNavBarVisibility = () => {
             if (window.scrollY > lastScrollY) {
-                //scroll down
                 setShowNavBar(false);
             } else {
                 setShowNavBar(true);
@@ -35,19 +23,24 @@ const NavBar = ({ darkMode, setDarkMode }) => {
         };
     }, [lastScrollY]);
 
+    const scrollToAbout = () => {
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
-        <header 
-          // background color darkMode state with opacity
-          style={{ backgroundColor: darkMode ? 'rgba(26, 32, 44, 0.8)' : 'rgba(255, 255, 255, 0.2)' }} 
-          // fixed positioning, width, z-index, transition effects and conditional translateY and text color
+        <header
+          style={{ backgroundColor: darkMode ? 'rgba(26, 32, 44, 0.8)' : 'rgba(243, 244, 246, 0.8)' }}
           className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ease-in-out 
-                      ${showNavBar ? 'translate-y-0' : '-translate-y-full'} 
-                      ${darkMode ? 'text-white' : 'text-black'}`}>
-          <div 
+            ${showNavBar ? 'translate-y-0' : '-translate-y-full'} 
+            ${darkMode ? 'bg-transparent text-white' : 'bg-white text-black'}`}>
+          <div
             className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 space-x-4">
             <div>
-              {/* clickable "Diana Lopez" header */}
-              <h1 className="text-3xl font-bold cursor-pointer" onClick={() => window.location.reload()}>DIANA LOPEZ</h1>
+              {/* "DIANA LOPEZ" header */}
+              <h1 className="text-3xl font-bold cursor-pointer" onClick={scrollToAbout}>DIANA LOPEZ</h1>
               <p className="text-md font-light">Full Stack Developer</p>
             </div>
             <div className="flex items-center space-x-4">
@@ -56,7 +49,8 @@ const NavBar = ({ darkMode, setDarkMode }) => {
             </div>
           </div>
         </header>
-      );
-    };
+    );
+};
 
 export default NavBar;
+

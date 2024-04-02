@@ -7,7 +7,7 @@ const tabs = [
   { text: "Contact", id: "contact" },
 ];
 
-const ChipTabs = () => {
+const NavTabs = () => {
   const [selected, setSelected] = useState('');
   const [initialLoad, setInitialLoad] = useState(true);
 
@@ -61,4 +61,4 @@ const Chip = ({ text, selected, setSelected }) => {
     </a>
   );
 };
-export default ChipTabs;
+export default NavTabs;

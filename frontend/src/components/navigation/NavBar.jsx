@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ChipTabs from './ChipTabs';
+import NavTabs from './NavTabs';
 import DarkModeToggle from './DarkModeToggle';
 
 const NavBar = ({ darkMode, setDarkMode }) => {
@@ -44,7 +44,7 @@ const NavBar = ({ darkMode, setDarkMode }) => {
               <p className="text-md font-light">Full Stack Developer</p>
             </div>
             <div className="flex items-center space-x-4">
-              <ChipTabs />
+              <NavTabs />
               <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
             </div>
           </div>

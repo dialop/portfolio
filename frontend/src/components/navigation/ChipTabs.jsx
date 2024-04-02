@@ -44,7 +44,6 @@ const ChipTabs = () => {
 };
 
 const Chip = ({ text, selected, setSelected }) => {
-  // Check if dark mode is active by examining the document body's class list
   const isDarkMode = document.body.classList.contains("dark");
 
   return (
@@ -54,10 +53,9 @@ const Chip = ({ text, selected, setSelected }) => {
       className={`relative flex items-center justify-center px-2.5 py-0.5 text-sm transition-colors ${
         selected ? "border-b-2 border-indigo-600" : "hover:border-b-2 hover:border-indigo-600"
       } ${
-        // Always apply text-black when not in dark mode, else apply text-white
         isDarkMode ? "text-white" : "text-black"
       }`}
-      style={{ paddingBottom: '8px' }} // Keep the underline a bit lower
+      style={{ paddingBottom: '8px' }}
     >
       {text}
     </a>

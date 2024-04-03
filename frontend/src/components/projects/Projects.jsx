@@ -2,7 +2,7 @@ import React from 'react';
 import instastaffImage from '../../assets/images/instastaff.gif';
 import photolabsImage from '../../assets/images/PhotoLabs.gif';
 
-function Projects() {
+const Projects = ({ darkMode }) => {
 
   const projectData = [
     {
@@ -42,25 +42,25 @@ function Projects() {
 
   
   return (
-    <div className="transparent py-10 px-5">
+      <div className={`py-10 px-5 ${darkMode ? 'bg-transparent' : darkMode ? 'bg-black' : 'bg-rgb(243, 244, 246)'}`}>
       <div className="container mx-auto">
-        <h2 className="text-5xl font-bold mb-10 text-center">Projects</h2>
+        <h2 className={`text-5xl font-bold mb-10 text-center ${darkMode ? 'text-white' : 'text-black'}`}>Projects</h2>
         {/* grid size */}
         <div className="grid grid-cols-1 gap-14">
           {projectData.map((project, index) => (
-            <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105">
-              <img src={project.image} alt={project.title} className="w-full h-70vh object-cover" />
+            <div key={index} className={`bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
+            <img src={project.image} alt={project.title} className="w-full h-70vh object-cover" />
               <div className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
-                <p className="text-gray-700 mb-5">{project.description}</p>
+                <h3 className={`text-2xl font-semibold mb-4 ${darkMode ? 'text-white' : 'text-black'}`}>{project.title}</h3>
+                <p className={`text-gray-700 mb-5 ${darkMode ? 'text-white' : 'text-black'}`}>{project.description}</p>
                 <ul className="flex flex-wrap gap-3 mb-5">
                   {project.tech.map((tech, index) => (
-                    <li key={index} className="text-sm font-medium text-gray-500 px-4 py-2 bg-gray-200 rounded">
+                    <li key={index} className={`text-sm font-medium ${darkMode ? 'text-white' : 'text-gray-500'} px-4 py-2 ${darkMode ? 'bg-gray-600' : 'bg-gray-200'} rounded`}>
                       {tech}
                     </li>
                   ))}
                 </ul>
-                <a href={project.link} className="inline-block px-2 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">View Source Code</a>
+                <a href={project.link} className={`inline-block px-2 py-2 ${darkMode ? 'bg-blue-600' : 'bg-blue-600'} text-white rounded hover:bg-blue-700 transition-colors`}>View Source Code</a>
               </div>
             </div>
           ))}
@@ -71,6 +71,4 @@ function Projects() {
 }
 
 
-
 export default Projects;
-

@@ -1,9 +1,7 @@
 import React from 'react';
 import { MdWbSunny, MdNightlight } from 'react-icons/md'; 
-import { useDarkMode } from '../../DarkMode';
 
-const DarkModeToggle = () => {
-    const { darkMode, setDarkMode } = useDarkMode();
+const DarkModeToggle = ({ darkMode, setDarkMode }) => {
   return (
     <button
       type="toggle button"

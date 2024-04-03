@@ -35,7 +35,7 @@ const NavBar = ({ darkMode, setDarkMode }) => {
           style={{ backgroundColor: darkMode ? 'rgba(26, 32, 44, 0.8)' : 'rgba(243, 244, 246, 0.8)' }}
           className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ease-in-out 
             ${showNavBar ? 'translate-y-0' : '-translate-y-full'} 
-            ${darkMode ? 'text-white' : 'text-black'}`}> {/* Ensure text color changes based on darkMode */}
+            ${darkMode ? 'text-white' : 'text-black'}`}> 
           <div
             className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 space-x-4">
             <div>
@@ -43,7 +43,7 @@ const NavBar = ({ darkMode, setDarkMode }) => {
               <p className="text-md font-light">Full Stack Developer</p>
             </div>
             <div className="flex items-center space-x-4">
-              <NavTabs />
+            <NavTabs darkMode={darkMode} />
               <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
             </div>
           </div>

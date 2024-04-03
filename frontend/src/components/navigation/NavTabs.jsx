@@ -6,7 +6,7 @@ const tabs = [
   { text: "Contact", id: "contact" },
 ];
 
-const NavTabs = () => {
+const NavTabs = ({ darkMode }) => {
   const [selected, setSelected] = useState('');
   const [initialLoad, setInitialLoad] = useState(true);
 
@@ -35,6 +35,7 @@ const NavTabs = () => {
           text={tab.text}
           selected={selected === `#${tab.id}`}
           setSelected={() => setSelected(`#${tab.id}`)}
+          darkMode={darkMode} 
           key={tab.text}
         />
       ))}
@@ -42,22 +43,20 @@ const NavTabs = () => {
   );
 };
 
-const Chip = ({ text, selected, setSelected }) => {
-  const isDarkMode = document.body.classList.contains("dark");
-
+const Chip = ({ text, selected, setSelected, darkMode }) => {
   return (
     <a
       href={`#${text.toLowerCase()}`}
       onClick={() => setSelected()}
       className={`relative flex items-center justify-center px-2.5 py-0.5 text-sm transition-colors ${
         selected ? "border-b-2 border-indigo-600" : "hover:border-b-2 hover:border-indigo-600"
-      } ${
-        isDarkMode ? "text-white" : "text-black"
-      }`}
+      } ${darkMode ? "text-white" : "text-black"}`} 
       style={{ paddingBottom: '8px' }}
     >
       {text}
     </a>
   );
 };
+
+
 export default NavTabs;

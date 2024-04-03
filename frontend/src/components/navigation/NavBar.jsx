@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import NavTabs from './NavTabs';
 import DarkModeToggle from './DarkModeToggle';
+import { useDarkMode } from '../../DarkMode';
 
-const NavBar = ({ darkMode, setDarkMode }) => {
+
+const NavBar = () => {
+    const { darkMode, setDarkMode } = useDarkMode(); 
     const [showNavBar, setShowNavBar] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -35,11 +38,10 @@ const NavBar = ({ darkMode, setDarkMode }) => {
           style={{ backgroundColor: darkMode ? 'rgba(26, 32, 44, 0.8)' : 'rgba(243, 244, 246, 0.8)' }}
           className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ease-in-out 
             ${showNavBar ? 'translate-y-0' : '-translate-y-full'} 
-            ${darkMode ? 'bg-transparent text-white' : 'bg-white text-black'}`}>
+            ${darkMode ? 'text-white' : 'text-black'}`}> 
           <div
             className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 space-x-4">
             <div>
-              {/* "DIANA LOPEZ" header */}
               <h1 className="text-3xl font-bold cursor-pointer" onClick={scrollToAbout}>DIANA LOPEZ</h1>
               <p className="text-md font-light">Full Stack Developer</p>
             </div>
@@ -53,4 +55,3 @@ const NavBar = ({ darkMode, setDarkMode }) => {
 };
 
 export default NavBar;
-

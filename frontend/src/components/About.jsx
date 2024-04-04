@@ -17,12 +17,26 @@ const About = () => {
     >     
     <div className="container mx-auto items-center px-4 sm:px-6 lg:px-8 mt-19 py-15">     
       <h1 className="text-8xl font-bold leading-tight text-center text-text-#CBD5E0 pb-16">Hi, I'm Diana</h1>
-      <p className="text-4xl text-text-#CBD5E0 mt-4 text-center">Junior Full Stack Developer with a healthcare background</p>
+      <p className="text-4xl text-text-#CBD5E0 mt-4 text-center"> A junior full stack developer with a healthcare background</p>
       <p className="text-4xl text-text-#CBD5E0 text-center">dedicated to creating impactful and user-friendly tech solutions.</p>
     </div>
+
+
+    <div className="px-10 py-20 bg-gray-100 text-gray-800">
+<h2 className="text-6xl font-bold text-center mb-10">About Me</h2>
+<div className="max-w-4xl mx-auto space-y-6">
+  <p className="text-xl">
+    
+  </p>
+  <p className="text-xl">
+ 
+  </p>
+</div>
+</div> 
     </motion.div>
 
   );
 };
 
 export default About;
+

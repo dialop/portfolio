@@ -24,7 +24,10 @@ const Skills = () => {
 
 
   return (
-    <div className="flex justify-center items-center space-x-4 py-3" style={{ paddingTop: '3rem', paddingBottom: '24rem'}} >
+    <div 
+    className="flex justify-center items-center space-x-4 py-3" style={{ paddingTop: '3rem', paddingBottom: '24rem'}} >
+    <h3  className="text-6xl font-bold leading-tight text-center text-text-#CBD5E0 pb-16">Skills</h3>
+
       <motion.img 
         src={reactLogo} 
         alt="React" 

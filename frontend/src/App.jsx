@@ -6,26 +6,38 @@ import Skills from './components/Skills';
 import Projects from './components/projects/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { motion, useScroll } from 'framer-motion';
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
-    // check local storage for dark mode preference
     const savedMode = localStorage.getItem('darkMode');
     return savedMode === 'true' ? true : false;
   });
 
   useEffect(() => {
-    // update local storage when darkMode changes
     localStorage.setItem('darkMode', darkMode);
   }, [darkMode]);
 
   useEffect(() => {
-    // apply or remove the dark class on body element based on darkMode state
     document.body.className = darkMode ? 'dark' : '';
   }, [darkMode]);
 
+  const { scrollYProgress } = useScroll();
+
   return (
     <div className={`min-h-screen ${darkMode ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-900'}`}>
+      <motion.div className="progress-bar" style={{
+      scaleX: scrollYProgress,
+      backgroundColor: darkMode ? 'green' : 'blue',
+      height: '7px',
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      right: 0,
+      zIndex: 10,
+      originX: 0, 
+    }} />
+
       <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
       <main className="flex-grow">
         <section id="about" className="pt-24">

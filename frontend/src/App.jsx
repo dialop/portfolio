@@ -28,7 +28,7 @@ function App() {
     <div className={`min-h-screen ${darkMode ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-900'}`}>
       <motion.div className="progress-bar" style={{
       scaleX: scrollYProgress,
-      backgroundColor: darkMode ? 'green' : 'blue',
+      backgroundColor: darkMode ? 'aqua' : 'blue',
       height: '7px',
       position: 'fixed',
       top: 0,

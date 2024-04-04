@@ -8,6 +8,10 @@ module.exports = {
         'custom-green': '#00FF00',
       },
       keyframes: {
+        aurora: {
+          'from': { backgroundPosition: "50% 50%, 50% 50%" },
+          'to': { backgroundPosition: "350% 50%, 350% 50%" },
+        },
         twinkle: {
           '0%, 100%': { opacity: 1 },
           '50%': { opacity: 0.5 },
@@ -15,11 +19,8 @@ module.exports = {
       },
       animation: {
         twinkle: 'twinkle 1.5s infinite',
+        aurora: "aurora 60s linear infinite",
       },
-    },
-    container: {
-      center: true,
-      padding: '2rem',
     },
   },
   plugins: [],

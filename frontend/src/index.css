@@ -19,3 +19,40 @@ body {
 .bg-gray-800 {
     background-color: transparent;
 }
+
+@layer components {
+  .aurora-bg {
+    @apply relative overflow-hidden;
+  
+    /* Assuming you want to keep complex gradient animations here */
+    background-image: var(--aurora-gradient);
+    animation: aurora 60s linear infinite;
+  }
+  
+  /* Define complex gradients and animations directly */
+  :root {
+    --aurora-gradient: repeating-linear-gradient(100deg, var(--tw-color-blue-500) 10%, var(--tw-color-indigo-300) 15%, var(--tw-color-blue-300) 20%, var(--tw-color-violet-200) 25%, var(--tw-color-blue-400) 30%);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}

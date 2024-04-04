@@ -48,7 +48,7 @@ const Projects = ({ darkMode }) => {
         {/* grid size */}
         <div className="grid grid-cols-1 gap-14">
           {projectData.map((project, index) => (
-            <div key={index} className={`bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
+            <div key={index} className={`bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 ${darkMode ? 'bg-blue-950 text-white' : 'bg-white text-black'}`}>
             <img src={project.image} alt={project.title} className="w-full h-70vh object-cover" />
               <div className="p-8">
                 <h3 className={`text-2xl font-semibold mb-4 ${darkMode ? 'text-white' : 'text-black'}`}>{project.title}</h3>
@@ -71,4 +71,4 @@ const Projects = ({ darkMode }) => {
 }
 
 
-export default Projects;
+export default Projects;23,32,44

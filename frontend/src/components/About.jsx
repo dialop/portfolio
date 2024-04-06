@@ -6,7 +6,7 @@ const fadeDownVariants = {
   visible: { opacity: 1, y: 0 },
 };
 
-const About = () => {
+const About = ({darkMode}) => {
   return (
     <motion.div 
       className="container mx-auto items-center px-4 sm:px-6 lg:px-8 mt-40 py-20"
@@ -22,7 +22,7 @@ const About = () => {
     </div>
 
 
-    <div className="px-10 py-20 bg-gray-100 text-gray-800">
+<div className={`px-10 py-20 ${darkMode ? 'bg-gray-800 text-gray-200' : 'bg-gray-100 text-gray-800'}`}>
 <h2 className="text-6xl font-bold text-center mb-10">About Me</h2>
 <div className="max-w-4xl mx-auto space-y-6">
   <p className="text-xl">

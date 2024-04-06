@@ -22,17 +22,14 @@ const About = ({darkMode}) => {
     </div>
 
 
-<div className={`px-10 py-20 ${darkMode ? 'bg-gray-800 text-gray-200' : 'bg-gray-100 text-gray-800'}`}>
-<h2 className="text-6xl font-bold text-center mb-10">About Me</h2>
-<div className="max-w-4xl mx-auto space-y-6">
-  <p className="text-xl">
-    Junior Full Stack Developer recent graduate from LHL
-  </p>
-  <p className="text-xl">
- 
-  </p>
-</div>
-</div> 
+    <div className="flex flex-col md:flex-row mt-16">
+        <div className="md:w-1/2 space-y-6">
+          <h2 className="text-6xl font-bold mb-10">About Me</h2>
+          <p className="text-xl">
+            Junior Full Stack Developer recent graduate from LHL
+          </p>
+        </div>
+      </div> 
     </motion.div>
 
   );

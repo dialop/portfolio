@@ -22,7 +22,7 @@ const About = ({darkMode}) => {
     </div>
 
 
-    <div className="flex flex-col md:flex-row mt-16">
+    <div className="flex flex-col md:flex-row mt-40">
         <div className="md:w-1/2 space-y-6">
           <h2 className="text-6xl font-bold mb-10">About Me</h2>
           <p className="text-xl">

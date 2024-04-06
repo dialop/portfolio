@@ -24,9 +24,9 @@ const Skills = () => {
 
 
   return (
-    <div 
-    className="flex justify-center items-center space-x-4 py-3" style={{ paddingTop: '3rem', paddingBottom: '24rem'}} >
-    <h3  className="text-6xl font-bold leading-tight text-center text-text-#CBD5E0 pb-16">Skills</h3>
+    <div className="flex flex-col justify-center items-center py-3" style={{ paddingTop: '3rem', paddingBottom: '24rem'}}>
+    <h3 className="text-6xl font-bold leading-tight text-center text-CBD5E0 pb-16">Skills</h3>
+    <div className="flex justify-center items-center space-x-4">
 
       <motion.img 
         src={reactLogo} 
@@ -98,6 +98,8 @@ const Skills = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       />
+    </div>
+    
     </div>
   );
 };

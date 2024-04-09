@@ -20,8 +20,6 @@ const About = ({ darkMode }) => {
         <p className="text-4xl text-text-#CBD5E0 mt-4 text-center"> A junior full stack developer with a healthcare background</p>
         <p className="text-4xl text-text-#CBD5E0 text-center">dedicated to creating impactful and user-friendly tech solutions.</p>
       </div>
-
-      {/* Spacer div with a height of 80px */}
       <div style={{ height: '300px' }}></div>
 
       <div className={`px-10 py-20 ${darkMode ? 'bg-gray-800 text-gray-200' : 'bg-gray-100 text-gray-800'}`}>

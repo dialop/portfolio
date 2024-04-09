@@ -41,9 +41,9 @@ const About = ({ darkMode }) => {
         </div>
 
         {/* Skills Section */}
-        <div className="w-full md:w-1/2 px-4">
-          <h3 className="text-6xl font-bold leading-tight text-center py-10" style={{ color: '#CBD5E0' }}>Skills</h3>
-          <div className="flex justify-center items-center space-x-4">
+      <div className="w-full md:w-1/2 px-4">
+      <h3 className={`text-6xl font-bold leading-tight text-center py-10 ${darkMode ? 'text-CBD5E0' : 'text-black'}`}>Skills</h3>
+      <div className="flex justify-center items-center space-x-4">
             {/* Skill Logos */}
             {[
               { src: reactLogo, alt: 'React' },

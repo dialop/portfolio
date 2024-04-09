@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './styles/App.css';
 import NavBar from './components/navigation/NavBar';
 import About from './components/About';
-import Skills from './components/Skills';
+// import Skills from './components/Skills';
 import Projects from './components/projects/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -43,7 +43,6 @@ function App() {
         <section id="about" className="pt-24">
           <About darkMode={darkMode} />
         </section>
-        <Skills darkMode={darkMode} />
         <section id="projects" className="py-16">
           <Projects darkMode={darkMode} />
         </section>

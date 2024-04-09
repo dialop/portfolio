@@ -39,6 +39,9 @@ const About = ({ darkMode }) => {
         <p className="text-4xl text-text-#CBD5E0">dedicated to creating impactful and user-friendly tech solutions.</p>
       </div>
 
+         {/* Flex Container Side by Side  */}
+      <div className="flex flex-wrap -mx-4">
+
       <div style={{ height: '300px' }}></div>
 
       <div className={`px-10 py-20 ${darkMode ? 'bg-gray-800 text-gray-200' : 'bg-gray-100 text-gray-800'}`}>
@@ -77,6 +80,7 @@ const About = ({ darkMode }) => {
             />
           ))}
         </div>
+      </div>
       </div>
     </motion.div>
   );

@@ -22,7 +22,7 @@ const About = ({ darkMode }) => {
       </div>
 
       {/* Spacer div with a height of 80px */}
-      <div style={{ height: '400px' }}></div>
+      <div style={{ height: '300px' }}></div>
 
       <div className={`px-10 py-20 ${darkMode ? 'bg-gray-800 text-gray-200' : 'bg-gray-100 text-gray-800'}`}>
         <h2 className="text-6xl font-bold text-center mt-60 py-20">About Me</h2>

@@ -33,41 +33,41 @@ const About = ({ darkMode }) => {
       {/* Flex Container for About Me and Skills */}
       <div className="flex flex-wrap items-start -mx-4">
 
-          <div className={`px-10 py-20 ${darkMode ? 'bg-gray-800 text-gray-200' : 'bg-gray-100 text-gray-800'}`}>
-          <h2 className="text-6xl font-bold text-center py-10">About Me</h2>
-          <p className="text-xl max-w-4xl mx-auto">
-            Junior Full Stack Developer recent graduate from LHL
-          </p>
-        </div>
+      <div className={`w-full md:w-1/2 px-4 py-20 ${darkMode ? 'bg-gray-800 text-gray-200' : 'bg-gray-100 text-gray-800'}`}>
+        <h2 className="text-6xl font-bold text-center py-10">About Me</h2>
+        <p className="text-xl max-w-4xl mx-auto text-center">
+          Junior Full Stack Developer recent graduate from LHL
+        </p>
+    </div>
 
         {/* Skills Section */}
-      <div className="w-full md:w-1/2 px-4">
-      <h3 className={`text-6xl font-bold leading-tight text-center py-10 ${darkMode ? 'text-CBD5E0' : 'text-black'}`}>Skills</h3>
-      <div className="flex justify-center items-center space-x-4">
-            {/* Skill Logos */}
-            {[
-              { src: reactLogo, alt: 'React' },
-              { src: tailwindLogo, alt: 'Tailwind CSS' },
-              { src: materialUILogo, alt: 'Material-UI' },
-              { src: nodejsLogo, alt: 'Node.js' },
-              { src: postgresLogo, alt: 'PostgreSQL' },
-              { src: gitLogo, alt: 'Git' },
-            ].map((logo, index) => (
-              <motion.img 
-                key={logo.alt}
-                src={logo.src} 
-                alt={logo.alt} 
-                className="h-16 w-16" 
-                initial="hidden"
-                animate="visible"
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              />
-            ))}
-          </div>
+        <div className="w-full md:w-1/2 px-4 py-20">
+        <h3 className={`text-6xl font-bold leading-tight text-center py-10 ${darkMode ? 'text-CBD5E0' : 'text-black'}`}>Skills</h3>
+        <div className="flex justify-center items-center flex-wrap">
+              {/* Skill Logos */}
+              {[
+                { src: reactLogo, alt: 'React' },
+                { src: tailwindLogo, alt: 'Tailwind CSS' },
+                { src: materialUILogo, alt: 'Material-UI' },
+                { src: nodejsLogo, alt: 'Node.js' },
+                { src: postgresLogo, alt: 'PostgreSQL' },
+                { src: gitLogo, alt: 'Git' },
+              ].map((logo, index) => (
+                <motion.img 
+                  key={logo.alt}
+                  src={logo.src} 
+                  alt={logo.alt} 
+                  className="h-16 w-16 mx-2 my-2" 
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                />
+              ))}
         </div>
-      </div>
+    </div>
+</div>
     </motion.div>
   );
 };

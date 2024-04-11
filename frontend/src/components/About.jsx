@@ -25,8 +25,8 @@ const About = ({ darkMode }) => {
       {/* About Me Section */}
       <div className="container mx-auto items-center px-4 sm:px-6 lg:px-8 mt-19 py-15">
          <h1 className="text-8xl font-bold leading-tight text-center text-text-#CBD5E0 pb-16">Hi, I'm Diana</h1>
-         <p className="text-4xl text-text-#CBD5E0 mt-4 text-center"> A junior full stack developer with a healthcare background</p>
-         <p className="text-4xl text-text-#CBD5E0 text-center">dedicated to creating impactful and user-friendly tech solutions.</p>
+         <p className="text-3xl text-text-#CBD5E0 mt-4 text-center"> A junior full stack developer with a healthcare background</p>
+         <p className="text-3xl text-text-#CBD5E0 text-center">dedicated to creating impactful and user-friendly tech solutions.</p>
        </div>
        <div style={{ height: '300px' }}></div>
 

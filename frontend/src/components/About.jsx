@@ -1,8 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { gsap, ScrollTrigger } from 'gsap/all';
 
-gsap.registerPlugin(ScrollTrigger);
 
 import reactLogo from '../assets/images/logos/react.png';
 import tailwindLogo from '../assets/images/logos/tailwind-css.png';
@@ -16,8 +14,6 @@ const About = ({ darkMode }) => {
     hidden: { opacity: 0, y: -20 },
     visible: { opacity: 1, y: 0 },
   };
-
-
 
   return (
     <motion.div

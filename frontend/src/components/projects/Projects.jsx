@@ -20,24 +20,6 @@ const Projects = ({ darkMode }) => {
       tech: ["React", "SCSS", "Express.js", "Postgresql"],
       link: "https://github.com/dialop/photolabs-starter.git",
     },
-
-
-//   {
-//       title: "Footwear Fusion",
-//       description: "Footwear Fusion is a marketplace for shoe enthusiasts, operating as a simplified Kijiji clone where users can buy and sell various types of footwear.",
-//       image: footwearFusionImage,
-//       tech: ["EJS", "SCSS", "Express.js"],
-//       link: "https://github.com/dialop/tweeter",
-//     },
-
-    // {
-    //   title: "Tweeter",
-    //   description: "Tweeter is a simple, single-page Twitter clone.",
-    //   image: tweeterImage,
-    //   tech: ["JavaScript","HTML", "SCSS", "Express.js"],
-    //   link: "https://github.com/dialop/tweeter.git",
-    // },
-
   ];
 
   

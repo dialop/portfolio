@@ -24,10 +24,9 @@ const Projects = ({ darkMode }) => {
 
   
   return (
-    <div className={`py-10 px-5 ${darkMode ? 'bg-transparent' : darkMode ? 'bg-black' : 'bg-rgb(243, 244, 246)'}`}>
-      <div className="container mx-auto">
-        <h2 className={`text-5xl font-bold mb-20 text-center ${darkMode ? 'text-white' : 'text-black'}`}>PROJECTS</h2>
-
+     <div className={`py-10 px-5 mt-80 ${darkMode ? 'bg-blue-850' : 'bg-gray-100'}`}> 
+    <div className="container mx-auto">
+      <h2 className={`text-5xl font-bold mb-20 text-center ${darkMode ? 'text-white' : 'text-black'}`}>PROJECTS</h2>
         
         {/* grid size */}
         <div className="grid grid-cols-1 gap-12">

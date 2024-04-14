@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-
 
 import reactLogo from '../assets/images/logos/react.png';
 import tailwindLogo from '../assets/images/logos/tailwind-css.png';
@@ -10,6 +9,7 @@ import postgresLogo from '../assets/images/logos/postgresql.png';
 import gitLogo from '../assets/images/logos/git.png';
 
 const About = ({ darkMode }) => {
+  const [hovered, setHovered] = useState(null);
   const fadeDownVariants = {
     hidden: { opacity: 0, y: -20 },
     visible: { opacity: 1, y: 0 },
@@ -28,36 +28,43 @@ const About = ({ darkMode }) => {
          <h1 className="text-8xl font-bold leading-tight text-center text-text-#CBD5E0 pb-16">Hi, I'm Diana</h1>
          <p className="text-3xl text-text-#CBD5E0 mt-4 text-center"> A junior full stack developer with a healthcare background</p>
          <p className="text-3xl text-text-#CBD5E0 text-center">dedicated to creating impactful and user-friendly tech solutions.</p>
-         
        </div>
        <div style={{ height: '300px' }}></div>
 
         {/* Skills Section */}
-        <div className="w-full px-4 py-20">
-        <h3 className={`text-5xl font-bold leading-tight text-center py-10 ${darkMode ? 'text-CBD5E0' : 'text-black'}`}>SKILLS</h3>
-        <div className="flex justify-center items-center flex-wrap">
-          
-              {/* Skill Logos */}
-              {[
-                { src: reactLogo, alt: 'React' },
-                { src: tailwindLogo, alt: 'Tailwind CSS' },
-                { src: materialUILogo, alt: 'Material-UI' },
-                { src: nodejsLogo, alt: 'Node.js' },
-                { src: postgresLogo, alt: 'PostgreSQL' },
-                { src: gitLogo, alt: 'Git' },
-              ].map((logo, index) => (
+        <div className="w-full px-4 mt-10 py-20">
+        <h3 className={`text-5xl font-bold leading-tight text-center py-10 ${darkMode ? 'text-gray-200' : 'text-black'}`}>SKILLS</h3>
+        <div className="flex justify-center items-center flex-wrap mt-6">
+            {[
+              { src: reactLogo, alt: 'React' },
+              { src: tailwindLogo, alt: 'Tailwind CSS' },
+              { src: materialUILogo, alt: 'Material-UI' },
+              { src: nodejsLogo, alt: 'Node.js' },
+              { src: postgresLogo, alt: 'PostgreSQL' },
+              { src: gitLogo, alt: 'Git' },
+            ].map((logo, index) => (
+              <div className="text-center px-4 py-2 m-2">
                 <motion.img 
                   key={logo.alt}
                   src={logo.src} 
                   alt={logo.alt} 
-                  className="h-19 w-21 mx-2 my-2" 
+                  className="h-32 w-32 mx-auto"
                   initial="hidden"
                   animate="visible"
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                 />
-              ))}
+                <motion.p
+                  className="text-lg mt-2"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.2 + 0.5 }}  // Staggered effect relative to the image
+                >
+                  {logo.alt}
+                </motion.p>
+              </div>
+            ))}
         </div>
     </div>
     </motion.div>
@@ -65,4 +72,3 @@ const About = ({ darkMode }) => {
 };
 
 export default About;
-

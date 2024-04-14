@@ -5,8 +5,8 @@ function Contact() {
   return (
     <section id="contact" className="flex justify-center items-center transparent mt-50 py-20">
       <div className="flex flex-col justify-center items-center p-8 lg:px-12 xl:px-32 w-full text-center">
-        <h1 className="text-5xl font-semibold text-gray-800 capitalize dark:text-white">
-          Let's Connect.
+        <h1 className="text-4xl font-semibold text-gray-800 capitalize dark:text-white">
+          LET'S CONNECT
         </h1>
         <div className="mt-6">
           <a href="mailto:dianalophernandez@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline text-3xl">

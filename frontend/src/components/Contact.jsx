@@ -8,14 +8,14 @@ function Contact() {
         <h1 className="text-5xl font-semibold text-gray-800 capitalize dark:text-white">
           CONTACT
         </h1>
-        <p className=" py-5 text-2xl  text-gray-800  dark:text-white">
+        <p className=" py-5 text-2xl  text-gray-800  dark:text-gray-500">
         Feel free to reach out if you're interested in collaborating! </p>
-        <div className="mt-6">
-          <a href="mailto:dianalophernandez@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline text-3xl">
+        <div className="mt-3">
+          <a href="mailto:dianalophernandez@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline text-2xl">
             dianalophernandez@gmail.com
           </a>
         </div>
-        <div className="flex justify-center items-center gap-8 mt-20">
+        <div className="flex justify-center items-center gap-6 mt-20">
           {/* GitHub Icon */}
           <div className="group relative">
             <a href="https://github.com/dialop" aria-label="GitHub" className="flex justify-center items-center p-4 bg-white rounded-lg shadow-lg transition-all hover:scale-110 hover:bg-gray-800">

@@ -24,40 +24,51 @@ const Projects = ({ darkMode }) => {
 
   
   return (
-     <div className={`py-10 px-5 mt-80 ${darkMode ? 'bg-blue-850' : 'bg-gray-100'}`}> 
-    <div className="container mx-auto">
-      <h2 className={`text-5xl font-bold mb-20 text-center ${darkMode ? 'text-white' : 'text-black'}`}>PROJECTS</h2>
+    <div className={`py-10 px-5 mt-80 ${darkMode ? 'bg-blue-850' : 'bg-gray-100'}`}> 
+      <div className="container mx-auto">
+        <h2 className={`text-5xl font-bold py-5 mb-13 text-center ${darkMode ? 'text-white' : 'text-black'}`}>PROJECTS</h2>
+        <p className="text-2xl mb-20 text-center text-gray-800 dark:text-gray-500">
+          Explore my latest projects
+        </p>
         
         {/* grid size */}
         <div className="grid grid-cols-1 gap-12">
           {projectData.map((project, index) => (
-            <div key={index} 
-            className={`bg-transparent text-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 
-            ${darkMode ? 'bg-blue-270 text-white' : 'bg-transparent text-black'} animate__animated animate__fadeIn`}>
-
+            <div 
+              key={index} 
+              className={`bg-transparent text-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 
+              ${darkMode ? 'bg-blue-270 text-white' : 'bg-transparent text-black'} animate__animated animate__fadeIn`}
+              style={{ backgroundColor: '#ffffff08' }} 
+            >
               <img src={project.image} alt={project.title} className="w-full h-65vh object-cover" />
               <div className="p-8">
-                <h3 className={`text-2xl font-semibold mb-4 ${darkMode ? 'text-white' : 'text-black'} animate__animated animate__slideInUp`}>{project.title}</h3>
+                <h3 className={`text-2xl font-semibold mb-4 ${darkMode ? 'text-white' : 'text-black'} animate__animated animate__slideInUp`}>
+                  {project.title}
+                </h3>
                 <p className={`text-gray-700 mb-5 ${darkMode ? 'text-white' : 'text-black'} animate__animated animate__slideInUp`}>
-                  {project.description}</p>
+                  {project.description}
+                </p>
                 <ul className="flex flex-wrap gap-3 mb-5">
                   {project.tech.map((tech, index) => (
-                    <li key={index} className={`text-sm font-medium ${darkMode ? 'text-white' : 'text-gray-500'} px-4 py-2 ${darkMode ? 'bg-gray-600' : 'bg-gray-200'} rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105`}>
+                    <li 
+                      key={index} 
+                      className={`text-sm font-medium ${darkMode ? 'text-white' : 'text-gray-500'} px-4 py-2 ${darkMode ? 'bg-gray-600' : 'bg-gray-200'} rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105`}
+                    >
                       {tech}
                     </li>
                   ))}
                 </ul>
-                <a href={project.link} className={`inline-block px-2 py-2 ${darkMode ? 'bg-blue-500' : 'bg-blue-500'} text-white rounded hover:bg-blue-700 transition-colors`}>Source Code</a>
+                <a href={project.link} className={`inline-block px-2 py-2 ${darkMode ? 'bg-blue-500' : 'bg-blue-500'} text-white rounded hover:bg-blue-700 transition-colors`}>
+                  Source Code
+                </a>
               </div>
             </div>
           ))}
         </div>
       </div>
     </div>
-  )
-  
+  );
 }
-
-
-export default Projects;
+  
+  export default Projects;
 

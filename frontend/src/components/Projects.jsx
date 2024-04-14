@@ -1,7 +1,6 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import instastaffImage from '../../assets/images/instastaff.gif';
-import photolabsImage from '../../assets/images/PhotoLabs.gif';
+import instastaffImage from '../assets/images/instastaff.gif';
+import photolabsImage from '../assets/images/PhotoLabs.gif';
 
 const Projects = ({ darkMode }) => {
 

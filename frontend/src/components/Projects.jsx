@@ -9,7 +9,7 @@ const Projects = ({ darkMode }) => {
       title: "Instastaff",
       description: "An app that facilitates the efficient exchange of labor and work requests by providing the logistic and operational relief to workers and providers in the medical service field.",
       image: instastaffImage,
-      tech: ["React", "Tailwind CSS", "Material UI", "Express.js", "Node.js", "Postgresql"],
+      tech: ["React", "Tailwind CSS", "Material UI", "Express.js", "Node.js", "PostgreSQL"],
       link: "https://github.com/dialop/instastaff.git",
     },
 
@@ -17,7 +17,7 @@ const Projects = ({ darkMode }) => {
       title: "Photolabs",
       description: "A client side single-page application that allows users to view photos in a react view-layer library.",
       image: photolabsImage,
-      tech: ["React", "SCSS", "Express.js", "Postgresql"],
+      tech: ["React", "SCSS", "Express.js", "PostgreSQL"],
       link: "https://github.com/dialop/photolabs-starter.git",
     },
   ];
@@ -31,7 +31,7 @@ const Projects = ({ darkMode }) => {
           Explore my latest projects
         </p>
         
-        {/* grid size */}
+        {/* Projecty Grid */}
         <div className="grid grid-cols-1 gap-12">
           {projectData.map((project, index) => (
             <div 

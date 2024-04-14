@@ -28,23 +28,15 @@ const About = ({ darkMode }) => {
          <h1 className="text-8xl font-bold leading-tight text-center text-text-#CBD5E0 pb-16">Hi, I'm Diana</h1>
          <p className="text-3xl text-text-#CBD5E0 mt-4 text-center"> A junior full stack developer with a healthcare background</p>
          <p className="text-3xl text-text-#CBD5E0 text-center">dedicated to creating impactful and user-friendly tech solutions.</p>
+         
        </div>
        <div style={{ height: '300px' }}></div>
 
-      {/* Flex Container for About Me and Skills */}
-      <div className="flex flex-wrap items-start -mx-4">
-
-      <div className={`w-full md:w-1/2 px-4 py-20 ${darkMode ? 'bg-gray-800 text-gray-200' : 'bg-gray-100 text-gray-800'}`}>
-        <h2 className="text-5xl font-bold py-10">ABOUT ME</h2>
-        <p className="text-xl max-w-4xl mx-auto ">
-        My journey in technology is driven by my commitment to lifelong learning and my desire to make a positive impact on people's lives. Whether it's through crafting responsive websites or developing robust backend systems, I am dedicated to building accessible and impactful digital experiences.
-        </p>
-    </div>
-
         {/* Skills Section */}
-        <div className="w-full md:w-1/2 px-4 py-20">
+        <div className="w-full px-4 py-20">
         <h3 className={`text-5xl font-bold leading-tight text-center py-10 ${darkMode ? 'text-CBD5E0' : 'text-black'}`}>SKILLS</h3>
         <div className="flex justify-center items-center flex-wrap">
+          
               {/* Skill Logos */}
               {[
                 { src: reactLogo, alt: 'React' },
@@ -58,7 +50,7 @@ const About = ({ darkMode }) => {
                   key={logo.alt}
                   src={logo.src} 
                   alt={logo.alt} 
-                  className="h-16 w-16 mx-2 my-2" 
+                  className="h-19 w-21 mx-2 my-2" 
                   initial="hidden"
                   animate="visible"
                   transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -68,7 +60,6 @@ const About = ({ darkMode }) => {
               ))}
         </div>
     </div>
-</div>
     </motion.div>
   );
 };

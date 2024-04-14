@@ -23,15 +23,15 @@ const About = ({ darkMode }) => {
       transition={{ duration: 0.8 }}
     >
       {/* About Me Section */}
-      <div className="container mx-auto items-center px-4 sm:px-6 lg:px-8 py-15">
+      <div className="container mx-auto items-center px-4 sm:px-6 lg:px-8 py-8">
          <h1 className="text-8xl font-bold leading-tight text-center text-text-#CBD5E0 pb-16">Hi, I'm Diana</h1>
-         <p className="text-3xl text-text-#CBD5E0 mt-4 text-center"> A junior full stack developer with a healthcare background</p>
+         <p className="text-3xl text-text- mt-4 text-center"> A junior full stack developer with a healthcare background</p>
          <p className="text-3xl text-text-#CBD5E0 text-center">dedicated to creating impactful and user-friendly tech solutions.</p>
        </div>
 
         {/* Skills Section */}
-        <div className="w-full px-4 mt-20 py-24">
-        <h3 className={`text-5xl font-bold leading-tight text-center py-10 ${darkMode ? 'text-gray-200' : 'text-black'}`}>SKILLS</h3>
+        <div className="w-full px-4 mt-40 py-80">
+        <h3 className={`text-5xl font-bold leading-tight text-center py-15 ${darkMode ? 'text-gray-200' : 'text-black'}`}>SKILLS</h3>
         <div className="flex justify-center items-center flex-wrap mt-6">
             {[
               { src: reactLogo, alt: 'React' },

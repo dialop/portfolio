@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import instastaffImage from '../../assets/images/instastaff.gif';
 import photolabsImage from '../../assets/images/PhotoLabs.gif';
 
@@ -24,7 +25,7 @@ const Projects = ({ darkMode }) => {
 
   
   return (
-    <div className={`py-3 px-4 mt-80 ${darkMode ? 'bg-blue-850' : 'bg-gray-100'}`}> 
+    <div className={`py-20 px-4 mt- mt-16 ${darkMode ? 'bg-blue-850' : 'bg-gray-100'}`}> 
       <div className="container mx-auto">
         <h2 className={`text-5xl font-bold py-5 mb-13 text-center ${darkMode ? 'text-white' : 'text-black'}`}>PROJECTS</h2>
         <p className="text-2xl mb-20 text-center text-gray-800 dark:text-gray-500">

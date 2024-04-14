@@ -11,10 +11,6 @@ body {
   background-color: #f7f9fd;
 }
 
-/* Custom close button styles */
-.close-button {
-  @apply absolute top-4 right-4 p-2 bg-white text-white text-lg rounded-full shadow-md hover:bg-gray-100;
-}
 
 .bg-gray-800 {
     background-color: transparent;

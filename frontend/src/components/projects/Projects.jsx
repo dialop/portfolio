@@ -71,4 +71,4 @@ const Projects = ({ darkMode }) => {
 }
 
 
-export default Projects;23,32,44
+export default Projects;

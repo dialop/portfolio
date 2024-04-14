@@ -44,17 +44,17 @@ const Projects = ({ darkMode }) => {
   return (
     <div className={`py-10 px-5 ${darkMode ? 'bg-transparent' : darkMode ? 'bg-black' : 'bg-rgb(243, 244, 246)'}`}>
       <div className="container mx-auto">
-        <h2 className={`text-5xl font-bold mb-10 text-center ${darkMode ? 'text-white' : 'text-black'}`}>PROJECTS</h2>
+        <h2 className={`text-5xl font-bold mb-20 text-center ${darkMode ? 'text-white' : 'text-black'}`}>PROJECTS</h2>
 
         
         {/* grid size */}
-        <div className="grid grid-cols-1 gap-14">
+        <div className="grid grid-cols-1 gap-12">
           {projectData.map((project, index) => (
             <div key={index} 
             className={`bg-transparent text-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 
             ${darkMode ? 'bg-blue-270 text-white' : 'bg-transparent text-black'} animate__animated animate__fadeIn`}>
 
-              <img src={project.image} alt={project.title} className="w-full h-70vh object-cover" />
+              <img src={project.image} alt={project.title} className="w-full h-65vh object-cover" />
               <div className="p-8">
                 <h3 className={`text-2xl font-semibold mb-4 ${darkMode ? 'text-white' : 'text-black'} animate__animated animate__slideInUp`}>{project.title}</h3>
                 <p className={`text-gray-700 mb-5 ${darkMode ? 'text-white' : 'text-black'} animate__animated animate__slideInUp`}>
@@ -70,7 +70,7 @@ const Projects = ({ darkMode }) => {
               </div>
             </div>
           ))}
-        </div>s
+        </div>
       </div>
     </div>
   )

@@ -7,7 +7,7 @@ const Projects = ({ darkMode }) => {
   const projectData = [
     {
       title: "Instastaff",
-      description: "InstaStaff is an app that facilitates the efficient exchange of labor and work requests by providing the logistic and operational relief to workers and providers in the medical service field.",
+      description: "An app that facilitates the efficient exchange of labor and work requests by providing the logistic and operational relief to workers and providers in the medical service field.",
       image: instastaffImage,
       tech: ["React", "Tailwind CSS", "Material UI", "Express.js", "Node.js", "Postgresql"],
       link: "https://github.com/dialop/instastaff.git",
@@ -15,7 +15,7 @@ const Projects = ({ darkMode }) => {
 
     {
       title: "Photolabs",
-      description: "PhotoLabs is a client side React-based single-page (SPA) application that allows users to view photos in a react view-layer library.",
+      description: "A client side single-page application that allows users to view photos in a react view-layer library.",
       image: photolabsImage,
       tech: ["React", "SCSS", "Express.js", "Postgresql"],
       link: "https://github.com/dialop/photolabs-starter.git",
@@ -50,7 +50,7 @@ const Projects = ({ darkMode }) => {
         {/* grid size */}
         <div className="grid grid-cols-1 gap-14">
           {projectData.map((project, index) => (
-            <div key={index} className={`bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 ${darkMode ? 'bg-blue-950 text-white' : 'bg-white text-black'} animate__animated animate__fadeIn`}>
+            <div key={index} className={`bg-transparent text-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 ${darkMode ? 'bg-gray-700 bg-opacity-80 text-white' : 'bg-transparent text-black'} animate__animated animate__fadeIn`}>
               <img src={project.image} alt={project.title} className="w-full h-70vh object-cover" />
               <div className="p-8">
                 <h3 className={`text-2xl font-semibold mb-4 ${darkMode ? 'text-white' : 'text-black'} animate__animated animate__slideInUp`}>{project.title}</h3>

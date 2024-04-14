@@ -9,7 +9,6 @@ import postgresLogo from '../assets/images/logos/postgresql.png';
 import gitLogo from '../assets/images/logos/git.png';
 
 const About = ({ darkMode }) => {
-  const [hovered, setHovered] = useState(null);
   const fadeDownVariants = {
     hidden: { opacity: 0, y: -20 },
     visible: { opacity: 1, y: 0 },
@@ -29,7 +28,6 @@ const About = ({ darkMode }) => {
          <p className="text-3xl text-text-#CBD5E0 mt-4 text-center"> A junior full stack developer with a healthcare background</p>
          <p className="text-3xl text-text-#CBD5E0 text-center">dedicated to creating impactful and user-friendly tech solutions.</p>
        </div>
-       <div style={{ height: '300px' }}></div>
 
         {/* Skills Section */}
         <div className="w-full px-4 mt-20 py-24">
@@ -59,7 +57,7 @@ const About = ({ darkMode }) => {
                   className="text-lg mt-2"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.2 + 0.5 }}  // Staggered effect relative to the image
+                  transition={{ duration: 0.5, delay: index * 0.2 + 0.5 }}  
                 >
                   {logo.alt}
                 </motion.p>

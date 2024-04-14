@@ -35,7 +35,7 @@ const About = ({ darkMode }) => {
       <div className="flex flex-wrap items-start -mx-4">
 
       <div className={`w-full md:w-1/2 px-4 py-20 ${darkMode ? 'bg-gray-800 text-gray-200' : 'bg-gray-100 text-gray-800'}`}>
-        <h2 className="text-6xl font-bold py-10">About Me</h2>
+        <h2 className="text-5xl font-bold py-10">ABOUT ME</h2>
         <p className="text-xl max-w-4xl mx-auto ">
         My journey in technology is driven by my commitment to lifelong learning and my desire to make a positive impact on people's lives. Whether it's through crafting responsive websites or developing robust backend systems, I am dedicated to building accessible and impactful digital experiences.
         </p>
@@ -43,7 +43,7 @@ const About = ({ darkMode }) => {
 
         {/* Skills Section */}
         <div className="w-full md:w-1/2 px-4 py-20">
-        <h3 className={`text-6xl font-bold leading-tight text-center py-10 ${darkMode ? 'text-CBD5E0' : 'text-black'}`}>Skills</h3>
+        <h3 className={`text-5xl font-bold leading-tight text-center py-10 ${darkMode ? 'text-CBD5E0' : 'text-black'}`}>SKILLS</h3>
         <div className="flex justify-center items-center flex-wrap">
               {/* Skill Logos */}
               {[

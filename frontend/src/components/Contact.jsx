@@ -12,7 +12,7 @@ function Contact() {
         Feel free to reach out if you're interested in collaborating! </p>
         <div className="mt-3">
           <a href="mailto:dianalophernandez@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline text-2xl">
-            dianalophernandez@gmail.com
+            diana.lophernandez@gmail.com
           </a>
         </div>
         <div className="flex justify-center items-center gap-6 mt-20">

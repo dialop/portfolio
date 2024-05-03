@@ -1,5 +1,5 @@
 # Portfolio
 
-### Powered by ReactJS, Tailwind CSS and Framer Motion.
+### Powered by ReactJS, Tailwind CSS and Framer Motion
 
 ## 

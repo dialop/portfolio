@@ -25,6 +25,7 @@ function Footer() {
       alignItems: 'center',
       justifyContent: 'center',
     }}>
+      
       <Box sx={{ '& > :not(style)': { m: 2 } }}>
         <IconButton component="a" href="https://twitter.com" target="_blank">
           <TwitterIcon />

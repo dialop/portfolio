@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { Box, useTheme } from '@mui/material';
+import { Box } from '@mui/material';
 import { gsap } from 'gsap';
 import Cursor from './components/Cursor'; 
 import AboutSection from './components/AboutSection';
@@ -7,7 +7,6 @@ import Footer from './components/Footer';
 import NavigationBar from './components/NavigationBar';
 
 function App() {
-  const theme = useTheme();
   const appRef = useRef();
 
   useEffect(() => {

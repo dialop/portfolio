@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { Box, Typography, IconButton, Link, useTheme } from '@mui/material';
+import { Box, IconButton, useTheme } from '@mui/material';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';

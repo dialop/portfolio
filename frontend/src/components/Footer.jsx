@@ -1,43 +1,21 @@
-import React, { useRef, useEffect } from 'react';
-import { Box, IconButton, useTheme } from '@mui/material';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { gsap } from 'gsap';
+import React from 'react';
 
 function Footer() {
-  const theme = useTheme();
-  const footerRef = useRef();
-
-  useEffect(() => {
-    gsap.fromTo(footerRef.current, { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 1 });
-  }, []);
+  const githubLink = "https://github.com/dialop/portfolio.git";
 
   return (
-    <Box ref={footerRef} sx={{
-      padding: theme.spacing(10, 2),
-      backgroundColor: theme.palette.background.default, 
-      textAlign: 'center',
-      position: 'relative',
-      width: '100%',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-    }}>
-      
-      <Box sx={{ '& > :not(style)': { m: 2 } }}>
-        <IconButton component="a" href="https://twitter.com" target="_blank">
-          <TwitterIcon />
-        </IconButton>
-        <IconButton component="a" href="https://github.com" target="_blank">
-          <GitHubIcon />
-        </IconButton>
-        <IconButton component="a" href="https://linkedin.com" target="_blank">
-          <LinkedInIcon />
-        </IconButton>
-      </Box>
-    </Box>
+    <div className="container mx-auto">
+      <div className="pt-20 sm:pt-30 pb-8 border-t-2 border-primary-light dark:border-secondary-dark">
+        <div className="text-gray-400 text-sm text-center">
+          <a
+            href={githubLink}
+            className="text-grey dark:text-grey hover:text-indigo-500 dark:hover:text-indigo-400"
+          >
+            Created & Designed by Diana © 2024
+          </a>
+        </div>
+      </div>
+    </div>
   );
 }
 

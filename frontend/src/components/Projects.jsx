@@ -31,7 +31,7 @@ const Projects = ({ darkMode }) => {
           Explore my latest projects
         </p>
         
-        {/* Projecty Grid */}
+        {/* Project Grid */}
         <div className="grid grid-cols-1 gap-12">
           {projectData.map((project, index) => (
             <div 

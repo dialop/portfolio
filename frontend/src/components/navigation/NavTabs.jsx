@@ -7,6 +7,7 @@ const tabs = [
   { text: "Contact", id: "contact" },
 ];
 
+// recieves darkmode prop
 const NavTabs = ({ darkMode }) => {
   const [selected, setSelected] = useState('');
   const [initialLoad, setInitialLoad] = useState(true);

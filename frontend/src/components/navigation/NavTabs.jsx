@@ -7,11 +7,12 @@ const tabs = [
   { text: "Contact", id: "contact" },
 ];
 
-// recieves darkmode prop
+// Recieves darkmode prop
 const NavTabs = ({ darkMode }) => {
   const [selected, setSelected] = useState('');
   const [initialLoad, setInitialLoad] = useState(true);
 
+  
   useEffect(() => {
     const handleHashChange = () => {
       if (!initialLoad) {
@@ -47,6 +48,7 @@ const NavTabs = ({ darkMode }) => {
   );
 };
 
+// Individual tab links
 const Chip = ({ text, selected, setSelected, darkMode }) => {
   return (
     <a

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+// Tabs with text id 
 const tabs = [
   { text: "About", id: "about" },
   { text: "Projects", id: "projects" },

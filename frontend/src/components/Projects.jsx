@@ -1,6 +1,6 @@
 import React from 'react';
 import instastaffImage from '../assets/images/instastaff.gif';
-import photolabsImage from '../assets/images/PhotoLabs.gif';
+import photolabsImage from '../assets/images/photolabs.gif';
 
 const Projects = ({ darkMode }) => {
 

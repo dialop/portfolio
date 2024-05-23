@@ -58,7 +58,11 @@ const Projects = ({ darkMode }) => {
                     </li>
                   ))}
                 </ul>
-                <a href={project.link} className={`inline-block px-2 py-2 ${darkMode ? 'bg-blue-500' : 'bg-blue-500'} text-white rounded hover:bg-blue-700 transition-colors`}>
+                <a 
+                href={project.link} 
+                target='_blank'
+                rel='noopener noreferrer'
+                className={`inline-block px-2 py-2 ${darkMode ? 'bg-blue-500' : 'bg-blue-500'} text-white rounded hover:bg-blue-700 transition-colors`}>
                   Source Code
                 </a>
               </div>

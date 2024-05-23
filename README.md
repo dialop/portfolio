@@ -1,7 +1,3 @@
-Sure! Here’s a more detailed version of the README:
-
----
-
 # Portfolio
 
 This is a personal portfolio project built using React and Tailwind CSS. The portfolio showcases various projects such as Instastaff and Photolabs.

@@ -1,6 +1,6 @@
 # Portfolio
 
-This is a personal portfolio project built using React and Tailwind CSS. The portfolio showcases various projects such as Instastaff and Photolabs.
+This is a personal portfolio project built using React and Tailwind CSS. The portfolio showcases various projects such as [Instastaff](https://github.com/dialop/instastaff.git) and [Photolabs](https://github.com/dialop/photolabs-starter.git).
 
 ## Table of Contents
 
